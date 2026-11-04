@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}.display .w+.w{margin-left:.28em}</style>
+<style id="volo-css">
+html.volo-on,html.volo-on body{overflow:hidden!important}
+html.volo-on .hero h1 .l i{transform:translateY(110%)!important}
+html.volo-on .hero__sub,html.volo-on .hero__ctas{opacity:0!important}
+#volo{position:fixed;inset:0;z-index:9999;background:#06080a;color:#eef0ec;display:none;overflow:hidden;cursor:default;-webkit-user-select:none;user-select:none}
+html.volo-on #volo{display:block}
+#volo:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(rgba(6,8,10,.55),transparent 18%,transparent 62%,rgba(6,8,10,.7))}
+#volo canvas{position:absolute;inset:0;width:100%!important;height:100%!important;display:block}
+#volo .vh{position:absolute;inset:0;z-index:2;pointer-events:none;font:500 10px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.22em;text-transform:uppercase}
+#volo .vc{position:absolute;width:26px;height:26px;border:1px solid rgba(238,240,236,.75)}
+#volo .vc.a{left:22px;top:22px;border-right:0;border-bottom:0}#volo .vc.b{right:22px;top:22px;border-left:0;border-bottom:0}
+#volo .vc.c{left:22px;bottom:22px;border-right:0;border-top:0}#volo .vc.d{right:22px;bottom:22px;border-left:0;border-top:0}
+#volo .vt{position:absolute;left:58px;top:26px;display:flex;gap:14px;align-items:center}
+#volo .rec{width:7px;height:7px;border-radius:50%;background:#e5484d;animation:vblink 1s steps(2) infinite}
+@keyframes vblink{50%{opacity:0}}
+#volo .vr{position:absolute;right:58px;top:26px;text-align:right}
+#volo .vx{position:absolute;left:50%;top:50%;width:46px;height:46px;margin:-23px 0 0 -23px;opacity:.7}
+#volo .vx:before,#volo .vx:after{content:"";position:absolute;background:rgba(238,240,236,.8)}
+#volo .vx:before{left:50%;top:0;bottom:0;width:1px;background:linear-gradient(rgba(238,240,236,.8) 35%,transparent 35% 65%,rgba(238,240,236,.8) 65%)}
+#volo .vx:after{top:50%;left:0;right:0;height:1px;background:linear-gradient(90deg,rgba(238,240,236,.8) 35%,transparent 35% 65%,rgba(238,240,236,.8) 65%)}
+#volo .vb{position:absolute;left:58px;right:58px;bottom:30px;display:flex;align-items:center;gap:16px}
+#volo .vbar{flex:1;height:1px;background:rgba(238,240,236,.22);position:relative;overflow:hidden}
+#volo .vbar i{position:absolute;left:0;top:0;bottom:0;width:0;background:#eef0ec}
+#volo .vti{position:absolute;left:0;right:0;bottom:16%;text-align:center;font:300 clamp(40px,7.5vw,112px)/.9 var(--font-display,Georgia,serif);letter-spacing:-.01em;text-transform:none;opacity:0;transform:translateY(18px);transition:opacity 1s,transform 1.4s cubic-bezier(.2,.7,.1,1);text-shadow:0 2px 30px rgba(0,0,0,.85),0 0 80px rgba(0,0,0,.6)}
+#volo .vti small{display:block;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.4em;text-transform:uppercase;margin-top:18px;opacity:.8}
+#volo.t .vti{opacity:1;transform:none}
+#volo .vs{position:absolute;right:22px;bottom:56px;pointer-events:auto;background:none;border:1px solid rgba(238,240,236,.4);color:inherit;font:inherit;letter-spacing:.22em;padding:9px 14px;cursor:pointer;border-radius:999px}
+#volo .vs:hover{background:rgba(238,240,236,.1)}
+#volo .vsc{position:absolute;left:58px;bottom:74px;opacity:0;transform:translateY(10px);transition:opacity .35s,transform .5s cubic-bezier(.2,.7,.1,1);text-transform:none;letter-spacing:0}
+#volo .vsc small{display:block;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.3em;text-transform:uppercase;color:#e9d6a6;margin-bottom:8px}
+#volo .vsc b{font:300 clamp(24px,3vw,40px)/1 var(--font-display,Georgia,serif);text-shadow:0 2px 20px rgba(0,0,0,.8)}
+#volo .vsc.on{opacity:1;transform:none}
+@media (max-width:640px){#volo .vsc{left:40px;bottom:100px}}
+#volo.out{opacity:0;transition:opacity .55s ease}
+@media (max-width:640px){#volo .vt,#volo .vr{top:24px}#volo .vr{display:none}#volo .vb{left:40px;right:40px}#volo .vt{left:40px}#volo .vs{bottom:54px}}
+</style>
+<script>(function(){try{var r=window.matchMedia('(prefers-reduced-motion: reduce)').matches,s=0;try{s=sessionStorage.getItem('volo:'+location.pathname)}catch(e){}
+var c=document.createElement('canvas'),g=c.getContext&&(c.getContext('webgl')||c.getContext('experimental-webgl'));
+if(!r&&!s&&g)document.documentElement.classList.add('volo-on')}catch(e){}})();</script>
+<style>
+#uPortal{position:fixed;inset:0;z-index:99999;background:#050508;transition:opacity 1s ease;cursor:pointer;
+  font-family:'Inter',system-ui,sans-serif;color:#F4F2EC}
+#uPortal.u-out{opacity:0;pointer-events:none}
+#uPortal canvas{position:absolute;inset:0;width:100%;height:100%}
+#uPortal .u-ui{position:absolute;left:0;right:0;bottom:9vh;display:flex;flex-direction:column;align-items:center;gap:13px;pointer-events:none}
+#uPortal .u-brand{font-family:Georgia,serif;font-size:1.25rem;letter-spacing:.02em}
+#uPortal .u-status{color:#A5A2B0;font-size:.92rem;text-align:center;padding:0 20px}
+#uPortal .u-status b{color:#F4F2EC;font-weight:600}
+#uPortal .u-track{width:min(320px,70vw);height:2px;background:rgba(238,240,246,.12);border-radius:2px;overflow:hidden}
+#uPortal .u-fill{height:100%;width:0%;background:linear-gradient(90deg,#8f93a5,#EEF0F6);transition:width .18s linear}
+#uPortal .u-pct{font-family:Georgia,serif;font-size:1.05rem;color:#EEF0F6}
+#uPortal .u-skip{position:absolute;top:24px;right:28px;color:#77747f;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase}
+#uPortal .u-flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;transition:opacity .5s ease}
+#uPortal .u-welcome{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  opacity:0;transform:scale(.96);transition:opacity .8s ease,transform .8s ease;pointer-events:none;text-align:center;padding:0 20px}
+#uPortal .u-welcome.u-on{opacity:1;transform:none}
+#uPortal .u-eyebrow{font-size:.8rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:#A5A2B0;margin-bottom:20px}
+#uPortal .u-h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(2.4rem,7vw,4.6rem);line-height:1.1;letter-spacing:-.02em;margin:0}
+#uPortal .u-shine{background:linear-gradient(115deg,#8b8fa0 0%,#EEF0F6 30%,#fff 50%,#EEF0F6 62%,#8b8fa0 100%);
+  background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:uShine 3.5s ease-in-out infinite}
+@keyframes uShine{0%,100%{background-position:12% 0}50%{background-position:88% 0}}
+#uPortal .u-sub{color:#A5A2B0;font-size:1.05rem;margin-top:16px}
+</style>
+</head>
+<body>
+<!-- ===== UMBRA INTRO 3D — configurare solo "name" ===== -->
+<script>window.UMBRA_INTRO = { name: "Villa Portoverde" };</script>
+<div id="uPortal">
+  <div class="u-flash" id="uFlash"></div>
+  <div class="u-ui" id="uUi">
+    <svg width="34" height="34" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="url(#ug)" stroke-width="1.6"/><path d="M16 3.5a12.5 12.5 0 0 1 0 25 15.5 15.5 0 0 0 0-25z" fill="url(#ug)"/><defs><linearGradient id="ug" x1="4" y1="4" x2="28" y2="28"><stop stop-color="#EEF0F6"/><stop offset="1" stop-color="#C3C6D3"/></linearGradient></defs></svg>
+    <div class="u-brand">Umbra</div>
+    <div class="u-status">Stiamo aprendo l'anteprima riservata a <b class="u-name"></b></div>
+    <div class="u-track"><div class="u-fill" id="uFill"></div></div>
+    <div class="u-pct" id="uPct">0%</div>
+  </div>
+  <div class="u-skip">Tocca per saltare</div>
+  <div class="u-welcome" id="uWelcome">
+    <div class="u-eyebrow">Umbra presenta</div>
+    <h1 class="u-h1">Benvenuto,<br><span class="u-shine u-name"></span></h1>
+    <p class="u-sub">Il vostro nuovo sito è pronto. Guardatelo.</p>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var NAME=(window.UMBRA_INTRO&&window.UMBRA_INTRO.name)||"";
+  document.querySelectorAll('#uPortal .u-name').forEach(function(e){e.textContent=NAME+(e.closest('.u-welcome')?'.':'')});
+  var portal=document.getElementById('uPortal'),fill=document.getElementById('uFill'),
+      pct=document.getElementById('uPct'),ui=document.getElementById('uUi'),
+      welcome=document.getElementById('uWelcome'),flash=document.getElementById('uFlash'),done=false;
+  document.documentElement.style.overflow='hidden';
+  function finish(){if(done)return;done=true;portal.classList.add('u-out');
+    document.documentElement.style.overflow='';
+    setTimeout(function(){portal.style.display='none'},1100)}
+  function showWelcome(){ui.style.display='none';welcome.classList.add('u-on');setTimeout(finish,2400)}
+  portal.addEventListener('click',finish);
+  var reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(typeof THREE==='undefined'||reduced){
+    var p=0,iv=setInterval(function(){p+=4;if(p>=100){p=100;clearInterval(iv);showWelcome()}
+      fill.style.width=p+'%';pct.textContent=p+'%'},60);
+    return;
+  }
+  var scene=new THREE.Scene();scene.fog=new THREE.FogExp2(0x050508,.045);
+  var camera=new THREE.PerspectiveCamera(60,innerWidth/innerHeight,.1,100);camera.position.set(0,0,8.5);
+  var renderer=new THREE.WebGLRenderer({antialias:true});renderer.setSize(innerWidth,innerHeight);
+  renderer.setPixelRatio(Math.min(devicePixelRatio,2));portal.insertBefore(renderer.domElement,portal.firstChild);
+  var N=5200,R=2.35,tube=.1,start=new Float32Array(N*3),target=new Float32Array(N*3),pos=new Float32Array(N*3);
+  function rnd(){return Math.random()*2-1}
+  for(var i=0;i<N;i++){
+    var v=new THREE.Vector3(rnd(),rnd(),rnd()).normalize().multiplyScalar(6+Math.random()*9);
+    start[i*3]=v.x;start[i*3+1]=v.y;start[i*3+2]=v.z;
+    var a=Math.random()*Math.PI*2,b=Math.random()*Math.PI*2,tr=tube*Math.sqrt(Math.random());
+    target[i*3]=(R+tr*Math.cos(b))*Math.cos(a);target[i*3+1]=(R+tr*Math.cos(b))*Math.sin(a);target[i*3+2]=tr*Math.sin(b);
+  }
+  pos.set(start);
+  var geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.BufferAttribute(pos,3));
+  var mat=new THREE.PointsMaterial({color:0xdfe2ec,size:.035,transparent:true,opacity:.95,blending:THREE.AdditiveBlending,depthWrite:false});
+  var ring=new THREE.Points(geo,mat);ring.rotation.x=.32;scene.add(ring);
+  var M=900,dpos=new Float32Array(M*3);
+  for(var j=0;j<M;j++){dpos[j*3]=rnd()*18;dpos[j*3+1]=rnd()*18;dpos[j*3+2]=-6-Math.random()*24}
+  var dgeo=new THREE.BufferGeometry();dgeo.setAttribute('position',new THREE.BufferAttribute(dpos,3));
+  scene.add(new THREE.Points(dgeo,new THREE.PointsMaterial({color:0x8f93a5,size:.02,transparent:true,opacity:.5,depthWrite:false})));
+  var t0=performance.now(),CONV=2600,THRU=1200;
+  var ease=function(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2};
+  (function frame(){
+    if(done){renderer.dispose();return}
+    var t=performance.now()-t0,p=Math.min(1,t/CONV),e=ease(p);
+    for(var i=0;i<N;i++){pos[i*3]=start[i*3]+(target[i*3]-start[i*3])*e;
+      pos[i*3+1]=start[i*3+1]+(target[i*3+1]-start[i*3+1])*e;pos[i*3+2]=start[i*3+2]+(target[i*3+2]-start[i*3+2])*e}
+    geo.attributes.position.needsUpdate=true;
+    ring.rotation.z+=.0016+.004*(1-p);
+    var s=Math.round(p*100);fill.style.width=s+'%';pct.textContent=s+'%';
+    if(t<CONV){camera.position.z=8.5-1.3*e}
+    else if(t<CONV+THRU){var q=ease((t-CONV)/THRU);camera.position.z=7.2-9.2*q;camera.rotation.z=.10*q;
+      mat.opacity=.95*(1-q*.55);if(q>.72)flash.style.opacity=(q-.72)/.28}
+    else{flash.style.opacity=0;showWelcome();return}
+    renderer.render(scene,camera);requestAnimationFrame(frame);
+  })();
+  addEventListener('resize',function(){camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});
+})();
+</script>
+<!-- ===== FINE UMBRA INTRO 3D ===== -->
+
+<div id="volo" aria-hidden="true">
+<div class="vh"><span class="vc a"></span><span class="vc b"></span><span class="vc c"></span><span class="vc d"></span>
+<div class="vt"><span class="rec"></span><span id="vlab">Rilievo 3D</span></div>
+<div class="vr">Foiano della Chiana (AR)<br><span id="vfr">00 / 00</span></div>
+<span class="vx"></span>
+<div class="vb"><span id="vpc">000</span><span class="vbar"><i id="vbi"></i></span><span>Villa Portoverde</span></div>
+<div class="vsc" id="vsc"><small>Scenario</small><b id="vsct"></b></div>
+<div class="vti">Villa Portoverde<small>Foiano della Chiana (AR)</small></div>
+<button class="vs" type="button" id="vskip">Salta ›</button></div>
+</div>
+
+<title>Villa Portoverde · Foiano della Chiana</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Villa Portoverde a Foiano della Chiana (AR): villa del 1921 con parco di 5.000 m², piscina, tensostruttura da 250 posti e rito civile in villa. Valdichiana, a 5 minuti dall&#x27;A1.">
+<meta name="referrer" content="no-referrer">
+<meta property="og:title" content="Villa Portoverde">
+<meta property="og:image" content="media/foto-c8b2e97f3a.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="media/foto-c8b2e97f3a.webp" fetchpriority="high">
+<style>
+/* Layout concept: an ivory editorial canvas; images pushed to the edges, one oversized italic serif line per section, asymmetric columns. */
+:root{
+  --ivory:#F5F0E8; --ivory-2:#EFE8DD; --sand:#E6DAC5; --stone:#D7CEC1; --ink:#1B1715; --ink-2:#4B443F; --mute:#7A716A;
+  --brass:#A68A55; --brass-2:#C8AE7C; --sea:#2E5B79; --line:rgba(27,23,21,.14);
+  --font-display:'Instrument Serif',"Times New Roman",Georgia,serif;
+  --font-body:'Hanken Grotesk',system-ui,-apple-system,"Segoe UI",sans-serif;
+  --gutter:max(20px,env(safe-area-inset-left,0px));
+  --gutter-r:max(20px,env(safe-area-inset-right,0px));
+  --ease:cubic-bezier(.2,.75,.2,1); --ease-out:cubic-bezier(.16,1,.3,1);
+  --h-nav:76px;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:hidden;overflow-x:clip;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:var(--font-body);font-weight:300;font-size:17px;line-height:1.55;color:var(--ink);background:var(--ivory);overflow-x:hidden;overflow-x:clip;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ivory)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+ul{list-style:none}
+strong{font-weight:500}
+em{font-style:italic}
+::selection{background:var(--brass-2);color:var(--ink)}
+.skip{position:absolute;left:var(--gutter);top:-60px;background:var(--ink);color:var(--ivory);padding:10px 16px;z-index:100;border-radius:3px}
+.skip:focus{top:12px}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+
+/* type */
+.display{font-family:var(--font-display);font-weight:400;line-height:.96;letter-spacing:-.015em;text-wrap:balance}
+.display em{font-style:italic;color:var(--brass)}
+h1,h2,h3{font-weight:400}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);font-weight:500}
+.eyebrow::before{content:"";display:inline-block;width:22px;height:1px;background:var(--brass);vertical-align:middle;margin-right:12px}
+.lead{font-family:var(--font-display);font-size:clamp(24px,2.6vw,36px);line-height:1.2;letter-spacing:-.01em}
+.body-text{max-width:56ch;color:var(--ink-2);font-size:17px}
+.body-text+.body-text{margin-top:1em}
+.wrap{padding-left:var(--gutter);padding-right:var(--gutter-r)}
+.sec{padding-block:clamp(72px,10vw,140px)}
+.sec-head{display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:clamp(36px,5vw,72px)}
+.sec-head .display{font-size:clamp(40px,6vw,84px)}
+@media(min-width:900px){.sec-head{grid-template-columns:1fr 1fr;align-items:end}.sec-head .side{max-width:44ch;justify-self:end;color:var(--ink-2)}}
+.lazy-sec{}
+
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;gap:12px;padding:15px 26px;border-radius:999px;font-weight:500;font-size:14px;letter-spacing:.04em;text-transform:uppercase;overflow:hidden;white-space:nowrap;transition:color .45s var(--ease),border-color .45s}
+.btn span{position:relative;z-index:1}
+.btn-ink{background:var(--ink);color:var(--ivory)}
+.btn-ink::after{content:"";position:absolute;inset:auto 0 0;height:0;background:var(--brass);transition:height .5s var(--ease)}
+.btn-ink:hover::after,.btn-ink:focus-visible::after{height:100%}
+.btn-line{border:1px solid var(--line);color:var(--ink)}
+.btn-line::after{content:"";position:absolute;inset:0;background:var(--ink);transform:translateY(101%);transition:transform .5s var(--ease)}
+.btn-line:hover,.btn-line:focus-visible{color:var(--ivory);border-color:var(--ink)}
+.btn-line:hover::after,.btn-line:focus-visible::after{transform:none}
+.btn-light{border:1px solid rgba(255,255,255,.55);color:#fff}
+.btn-light::after{content:"";position:absolute;inset:0;background:#fff;transform:translateY(101%);transition:transform .5s var(--ease)}
+.btn-light:hover,.btn-light:focus-visible{color:var(--ink)}
+.btn-light:hover::after,.btn-light:focus-visible::after{transform:none}
+.arrow{width:14px;height:14px;position:relative;z-index:1}
+.textlink{position:relative;display:inline-block;padding-bottom:3px;font-weight:500;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.textlink::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:currentColor;transform-origin:right;transform:scaleX(1);transition:transform .5s var(--ease)}
+.textlink:hover::after{transform:scaleX(0);transform-origin:left;animation:relink .5s var(--ease) .5s forwards}
+@keyframes relink{to{transform:scaleX(1)}}
+
+/* cursor (fine pointers only) */
+.cursor{position:fixed;left:0;top:0;width:10px;height:10px;border-radius:50%;background:var(--ink);pointer-events:none;z-index:200;mix-blend-mode:difference;transform:translate(-50%,-50%);display:none}
+.cursor.is-link{width:64px;height:64px;background:#fff}
+.cursor .lbl{position:absolute;inset:0;display:grid;place-items:center;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#000;opacity:0;transition:opacity .2s}
+.cursor.is-view .lbl{opacity:1}
+@media(hover:hover) and (pointer:fine){.cursor{display:block}.cursor-on *{cursor:none!important}}
+
+/* curtain intro */
+.curtain{position:fixed;inset:0;z-index:90;pointer-events:none;display:flex}
+.curtain i{flex:1;background:var(--ivory-2)}
+.curtain i:first-child{border-right:1px solid var(--line)}
+html:not(.js) .curtain,.curtain.done{display:none}
+
+/* nav */
+.nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;height:var(--h-nav);display:flex;align-items:center;justify-content:space-between;padding-left:var(--gutter);padding-right:var(--gutter-r);transition:background .5s,backdrop-filter .5s,color .5s}
+.nav.is-dark{color:#fff}
+.nav.is-solid{background:rgba(245,240,232,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink)}
+.brand{font-family:var(--font-display);font-size:26px;letter-spacing:-.01em;display:flex;align-items:baseline;gap:10px}
+.brand small{font-family:var(--font-body);font-size:11px;letter-spacing:.18em;text-transform:uppercase;opacity:.7;font-weight:500}
+.nav-links{display:none;gap:30px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.nav-links a{position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .45s var(--ease)}
+.nav-links a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav .btn{display:none;padding:12px 20px;font-size:12px}
+.burger{display:inline-flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;padding:10px 0}
+.burger i{position:relative;width:30px;height:12px;display:block}
+.burger i::before,.burger i::after{content:"";position:absolute;left:0;width:30px;height:1.5px;background:currentColor;transition:transform .45s var(--ease),top .45s var(--ease)}
+.burger i::before{top:0}.burger i::after{top:10px}
+.menu-open .burger i::before{top:5px;transform:rotate(45deg)}.menu-open .burger i::after{top:5px;transform:rotate(-45deg)}
+@media(min-width:1000px){.nav-links{display:flex}.nav .btn{display:inline-flex}.nav .btn.btn-ink{background:var(--ink);color:var(--ivory)}.nav.is-dark .btn-ink{background:#fff;color:var(--ink)}}
+
+/* full-screen menu */
+.menu{position:fixed;inset:0;z-index:45;background:var(--ivory);color:var(--ink);display:grid;grid-template-rows:auto 1fr auto;padding:calc(var(--h-nav) + env(safe-area-inset-top,0px)) var(--gutter-r) max(24px,env(safe-area-inset-bottom,0px)) var(--gutter);clip-path:inset(0 0 100% 0);transition:clip-path .8s var(--ease);visibility:hidden}
+.menu-open .menu{clip-path:inset(0 0 0 0);visibility:visible}
+.menu-open{overflow:hidden}
+.menu__grid{display:grid;gap:30px;align-content:center}
+.menu__links a{display:flex;align-items:baseline;gap:18px;font-family:var(--font-display);font-size:clamp(40px,8vw,96px);line-height:1.02;letter-spacing:-.02em;padding:6px 0;border-bottom:1px solid var(--line);transform:translateY(30px);opacity:0;transition:transform .7s var(--ease),opacity .7s var(--ease)}
+.menu__links a sup{font-family:var(--font-body);font-size:12px;letter-spacing:.14em;color:var(--mute);font-weight:500}
+.menu__links a:hover{color:var(--brass);padding-left:12px}
+.menu-open .menu__links a{transform:none;opacity:1}
+.menu-open .menu__links a:nth-child(1){transition-delay:.15s}.menu-open .menu__links a:nth-child(2){transition-delay:.2s}.menu-open .menu__links a:nth-child(3){transition-delay:.25s}.menu-open .menu__links a:nth-child(4){transition-delay:.3s}.menu-open .menu__links a:nth-child(5){transition-delay:.35s}.menu-open .menu__links a:nth-child(6){transition-delay:.4s}.menu-open .menu__links a:nth-child(7){transition-delay:.45s}
+.menu__side{display:none}
+.menu__pic{aspect-ratio:4/5;max-width:100%;overflow:hidden;border-radius:4px;background:var(--stone)}
+.menu__pic img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 1.2s var(--ease)}
+.menu-open .menu__pic img{transform:none}
+.menu__meta{display:grid;gap:8px;font-size:14px;color:var(--ink-2)}
+.menu__meta b{font-weight:500;color:var(--ink)}
+.menu__foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);padding-top:16px;border-top:1px solid var(--line)}
+@media(min-width:900px){.menu__grid{grid-template-columns:1.3fr .7fr;gap:60px}.menu__side{display:grid;gap:24px;align-content:center;max-width:380px;justify-self:end}}
+
+/* hero */
+.hero{position:relative;height:190vh;height:190svh;color:#fff}
+html:not(.js) .hero,.rm .hero{height:auto}
+.hero__pin{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:var(--ivory)}
+html:not(.js) .hero__pin,.rm .hero__pin{position:relative}
+.hero__frame{position:absolute;inset:0;clip-path:inset(22% 16% 12% 16% round 6px);background:#0c1e2a;will-change:clip-path}
+html:not(.js) .hero__frame,.rm .hero__frame{clip-path:none}
+.hero__frame img{width:100%;height:100%;object-fit:cover;object-position:50% 78%;transform:scale(1.12);will-change:transform}
+html:not(.js) .hero__frame img,.rm .hero__frame img{transform:none}
+.hero__frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,0) 40%,rgba(5,10,14,.55))}
+.hero__title{position:absolute;left:var(--gutter);right:var(--gutter-r);top:calc(var(--h-nav) + env(safe-area-inset-top,0px) + 2vh);z-index:2;color:var(--ink);mix-blend-mode:normal}
+.hero__title .display{font-size:clamp(68px,15vw,230px);line-height:.9;letter-spacing:-.03em}
+.hero__title .display .w{display:inline-block;overflow:hidden;vertical-align:bottom}
+.hero__title .display .w i{display:inline-block;font-style:inherit;transform:translateY(110%);transition:transform 1.1s var(--ease-out)}
+.hero.ready .hero__title .w i,html:not(.js) .hero__title .w i{transform:none}
+.hero__title .eyebrow{color:var(--ink-2);margin-bottom:14px;opacity:0;transition:opacity .9s .4s}
+.hero.ready .hero__title .eyebrow,html:not(.js) .hero__title .eyebrow{opacity:1}
+.hero__bottom{position:absolute;left:var(--gutter);right:var(--gutter-r);bottom:max(28px,env(safe-area-inset-bottom,0px));z-index:2;display:grid;gap:18px;opacity:0;transform:translateY(16px)}
+html:not(.js) .hero__bottom,.rm .hero__bottom{opacity:1;transform:none}
+.hero__bottom p{font-family:var(--font-display);font-size:clamp(22px,2.6vw,36px);line-height:1.15;max-width:22ch;text-wrap:balance}
+.hero__bottom .ctas{display:flex;flex-wrap:wrap;gap:10px}
+.hero__scroll{position:absolute;right:var(--gutter-r);top:50%;z-index:2;transform:rotate(90deg) translateX(-50%);transform-origin:right;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);display:flex;align-items:center;gap:10px}
+.hero__scroll i{width:48px;height:1px;background:var(--ink-2);display:block;overflow:hidden;position:relative}
+.hero__scroll i::after{content:"";position:absolute;inset:0;background:var(--brass);animation:slide 1.8s var(--ease) infinite}
+@keyframes slide{0%{transform:translateX(-100%)}60%,100%{transform:translateX(100%)}}
+@media(max-width:700px){.hero__scroll{display:none}.hero__frame{clip-path:inset(28% 8% 14% 8% round 6px)}.hero__title .display{font-size:clamp(64px,22vw,120px)}}
+
+/* manifesto */
+.manifesto .lead{font-size:clamp(26px,4vw,56px);line-height:1.12;max-width:26ch;letter-spacing:-.015em}
+.manifesto .lead .w{display:inline-block;opacity:.12;transition:opacity .4s}
+.manifesto .lead .w.on,html:not(.js) .manifesto .lead .w,.rm .manifesto .lead .w{opacity:1}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 20px;margin-top:clamp(40px,6vw,80px);padding-top:28px;border-top:1px solid var(--line)}
+.facts div{display:grid;gap:6px}
+.facts b{font-family:var(--font-display);font-size:clamp(34px,4vw,56px);font-weight:400;line-height:1;letter-spacing:-.02em}
+.facts b sup{font-size:.45em;color:var(--brass);vertical-align:top;margin-left:2px}
+.facts span{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+@media(min-width:800px){.facts{grid-template-columns:repeat(4,1fr)}}
+
+/* villa editorial grid */
+.villa__grid{display:grid;gap:24px;grid-template-columns:1fr}
+.pic{position:relative;overflow:hidden;background:var(--stone);border-radius:3px}
+.pic img{width:100%;height:100%;object-fit:cover}
+.pic--par img{height:118%;width:100%;will-change:transform}
+.villa__a{aspect-ratio:4/5}
+.villa__b{aspect-ratio:1/1}
+.villa__c{aspect-ratio:3/4}
+.villa__text{display:grid;gap:22px;align-content:center;padding-block:10px}
+.villa__cap{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:10px;display:flex;justify-content:space-between}
+@media(min-width:900px){
+.villa__grid{grid-template-columns:repeat(12,1fr);grid-auto-rows:auto;align-items:start}
+.villa__a{grid-column:1/7;grid-row:1/3}
+.villa__text{grid-column:8/13;grid-row:1;padding-top:6vw}
+.villa__b{grid-column:8/11;grid-row:2;margin-top:40px}
+.villa__c{grid-column:2/5;grid-row:3;margin-top:-80px}
+.villa__d{grid-column:6/13;grid-row:3;align-self:end;padding-left:4vw;margin-top:60px}
+}
+
+/* journey (3D dolly) */
+.journey{position:relative;height:420vh;background:var(--ink);color:var(--ivory)}
+@media(max-width:700px){.journey{height:340vh}}
+html:not(.js) .journey,.rm .journey{height:auto}
+.journey__pin{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;perspective:1100px;perspective-origin:50% 50%}
+html:not(.js) .journey__pin,.rm .journey__pin{position:relative;height:auto;perspective:none;overflow:visible;padding:80px 0}
+.journey__head{position:absolute;left:var(--gutter);right:var(--gutter-r);top:calc(var(--h-nav) + env(safe-area-inset-top,0px) + 10px);z-index:5;display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
+html:not(.js) .journey__head,.rm .journey__head{position:static;padding:0 var(--gutter-r) 40px var(--gutter)}
+.journey__head .display{font-size:clamp(30px,4vw,56px);color:var(--ivory)}
+.journey__head .eyebrow{color:rgba(245,240,232,.6)}
+.journey__prog{width:min(220px,30vw);height:1px;background:rgba(245,240,232,.25);margin-top:12px;position:relative}
+.journey__prog i{position:absolute;inset:0;background:var(--brass-2);transform-origin:left;transform:scaleX(0)}
+.journey__world{position:absolute;inset:0;transform-style:preserve-3d;will-change:transform}
+html:not(.js) .journey__world,.rm .journey__world{position:static;transform:none!important;display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));padding:0 var(--gutter-r) 0 var(--gutter)}
+.plane{position:absolute;left:50%;top:50%;width:min(70vw,980px);aspect-ratio:3/2;transform:translate(-50%,-50%);transform-style:preserve-3d;will-change:transform,opacity;border-radius:4px;overflow:hidden;background:#222;box-shadow:0 40px 80px -30px rgba(0,0,0,.7)}
+.plane img{width:100%;height:100%;object-fit:cover}
+.plane figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 20px;background:linear-gradient(0deg,rgba(0,0,0,.55),rgba(0,0,0,0));display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.plane figcaption b{font-family:var(--font-display);font-size:clamp(20px,2.2vw,30px);text-transform:none;letter-spacing:0;font-weight:400}
+html:not(.js) .plane,.rm .plane{position:static;width:auto;margin:0;transform:none!important;opacity:1!important}
+@media(max-width:700px){.plane{width:104vw;aspect-ratio:4/5}}
+.journey__fog{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 50%,rgba(27,23,21,0) 40%,rgba(27,23,21,.85) 100%)}
+html:not(.js) .journey__fog,.rm .journey__fog{display:none}
+.journey__hint{position:absolute;left:0;right:0;bottom:max(22px,env(safe-area-inset-bottom,0px));text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,240,232,.55)}
+html:not(.js) .journey__hint,.rm .journey__hint{display:none}
+
+/* suites */
+.suites{background:var(--ivory-2)}
+.suites__layout{display:grid;gap:40px}
+.suites__stack{display:none}
+.suite{display:grid;gap:16px;padding:26px 0;border-top:1px solid var(--line)}
+.suite:last-child{border-bottom:1px solid var(--line)}
+.suite__pic{aspect-ratio:4/3;border-radius:3px;overflow:hidden;background:var(--stone)}
+.suite__pic img{width:100%;height:100%;object-fit:cover}
+.suite__head{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+.suite__head h3{font-family:var(--font-display);font-size:clamp(30px,3.4vw,48px);letter-spacing:-.015em;line-height:1}
+.suite__head h3 em{color:var(--brass)}
+.suite__head span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);white-space:nowrap}
+.suite p{color:var(--ink-2);max-width:52ch}
+.suite__meta{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px;color:var(--mute)}
+.suite__meta b{color:var(--ink);font-weight:500}
+.suite__foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.price{font-family:var(--font-display);font-size:26px}
+.price small{font-family:var(--font-body);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-left:6px}
+@media(min-width:1000px){
+.suites__layout{grid-template-columns:1fr 1fr;gap:6vw;align-items:start}
+.suites__stack{display:block;position:sticky;top:calc(var(--h-nav) + env(safe-area-inset-top,0px) + 20px);aspect-ratio:4/5;border-radius:4px;overflow:hidden;background:var(--stone)}
+.suites__stack img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .8s var(--ease),transform 1.4s var(--ease)}
+.suites__stack img.on{opacity:1;transform:none}
+.suite__pic{display:none}
+.suite{cursor:default;transition:padding .5s var(--ease)}
+.suite.on{padding-left:14px}
+}
+
+/* experiences */
+.exp__track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-right:var(--gutter-r);padding-left:var(--gutter);margin-left:calc(var(--gutter) * -1);margin-right:calc(var(--gutter-r) * -1)}
+.exp__track::-webkit-scrollbar{display:none}
+.exp{flex:0 0 min(78vw,420px);scroll-snap-align:start;display:grid;gap:14px}
+.exp__pic{aspect-ratio:4/5;border-radius:3px;overflow:hidden;background:var(--stone)}
+.exp__pic img{width:100%;height:100%;object-fit:cover;transition:transform 1.3s var(--ease)}
+.exp:hover .exp__pic img{transform:scale(1.05)}
+.exp h3{font-family:var(--font-display);font-size:clamp(26px,2.4vw,34px);letter-spacing:-.01em;line-height:1.05}
+.exp p{color:var(--ink-2);font-size:15px}
+.exp .exp__meta{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);display:flex;justify-content:space-between}
+@media(min-width:1000px){.exp__track{display:grid;grid-template-columns:repeat(4,1fr);overflow:visible;margin:0;padding:0;gap:24px}.exp{flex:none}.exp:nth-child(2){margin-top:60px}.exp:nth-child(4){margin-top:60px}}
+
+/* sea full-bleed */
+.sea{position:relative;min-height:110vh;display:grid;align-items:end;color:#fff;overflow:hidden;isolation:isolate;padding-block:clamp(60px,8vw,120px)}
+.sea__bg{position:absolute;inset:-14% 0;z-index:-1;will-change:transform}
+.sea__bg img{width:100%;height:100%;object-fit:cover}
+.sea::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,20,30,.1),rgba(0,20,30,.55))}
+.sea .display{font-size:clamp(48px,9vw,140px);line-height:.92;color:#fff;max-width:10ch}
+.sea .display em{color:var(--brass-2)}
+.sea p{max-width:46ch;margin-top:22px;font-size:17px;color:rgba(255,255,255,.85)}
+.marquee{overflow:hidden;margin-top:clamp(36px,5vw,70px);border-top:1px solid rgba(255,255,255,.35);border-bottom:1px solid rgba(255,255,255,.35);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee__track{display:flex;width:max-content;animation:marq 34s linear infinite}
+.marquee span{font-family:var(--font-display);font-size:clamp(22px,2.6vw,34px);padding:14px 34px;white-space:nowrap;display:flex;align-items:center;gap:34px}
+.marquee span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--brass-2)}
+@keyframes marq{to{transform:translate3d(-50%,0,0)}}
+
+/* cuisine */
+.cuisine__grid{display:grid;gap:40px}
+.menu-list{display:grid}
+.menu-list li{display:grid;grid-template-columns:1fr auto;gap:16px;padding:16px 0;border-top:1px solid var(--line);align-items:baseline}
+.menu-list li:last-child{border-bottom:1px solid var(--line)}
+.menu-list b{font-family:var(--font-display);font-size:clamp(20px,2vw,26px);font-weight:400}
+.menu-list small{display:block;color:var(--mute);font-size:14px;margin-top:3px}
+.menu-list i{font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.cuisine__pics{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.cuisine__pics .pic:first-child{aspect-ratio:3/4}
+.cuisine__pics .pic:last-child{aspect-ratio:3/4;margin-top:48px}
+.cuisine__note{font-family:var(--font-display);font-size:clamp(22px,2.2vw,30px);line-height:1.2;max-width:28ch;margin-top:26px}
+@media(min-width:1000px){.cuisine__grid{grid-template-columns:1fr 1fr;gap:6vw;align-items:center}}
+
+/* wellness */
+.well{background:var(--ink);color:var(--ivory)}
+.well .eyebrow{color:rgba(245,240,232,.55)}
+.well .display{color:var(--ivory)}
+.well__grid{display:grid;gap:40px}
+.well__pic{aspect-ratio:3/4;border-radius:3px;overflow:hidden;background:#2a2522}
+.well__pic img{width:100%;height:100%;object-fit:cover}
+.well__list{display:grid;margin-top:30px}
+.well__list li{padding:18px 0;border-top:1px solid rgba(245,240,232,.18);display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:baseline}
+.well__list li span{font-family:var(--font-display);font-size:14px;color:var(--brass-2)}
+.well__list li b{font-weight:400;font-size:18px}
+.well__list li p{grid-column:2;color:rgba(245,240,232,.7);font-size:15px}
+@media(min-width:1000px){.well__grid{grid-template-columns:.9fr 1.1fr;gap:7vw;align-items:center}}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gal button{display:block;width:100%;overflow:hidden;border-radius:3px;background:var(--stone);position:relative}
+.gal button img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.gal button:hover img{transform:scale(1.04)}
+.gal .r43{aspect-ratio:4/3}.gal .r34{aspect-ratio:3/4}.gal .r11{aspect-ratio:1/1}
+@media(min-width:900px){.gal{grid-template-columns:repeat(4,1fr);grid-auto-flow:dense}.gal .tall{grid-row:span 2}.gal .wide{grid-column:span 2}}
+.lightbox{position:fixed;inset:0;z-index:80;background:rgba(20,17,15,.94);display:none;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-left,0px))}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(92vw,1400px);max-height:84vh;object-fit:contain;border-radius:3px}
+.lightbox figcaption{position:absolute;left:var(--gutter);bottom:max(18px,env(safe-area-inset-bottom,0px));color:#fff;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.lb-btn{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.4);color:#fff;display:grid;place-items:center;transition:background .3s}
+.lb-btn:hover{background:rgba(255,255,255,.15)}
+.lb-prev{left:var(--gutter)}.lb-next{right:var(--gutter-r)}
+.lb-close{position:absolute;right:var(--gutter-r);top:max(16px,env(safe-area-inset-top,0px));color:#fff;font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:12px}
+@media(max-width:700px){.lb-btn{top:auto;bottom:max(60px,env(safe-area-inset-bottom,0px));transform:none}}
+
+/* booking */
+.book{background:var(--sand)}
+.book__grid{display:grid;gap:40px}
+.form{display:grid;gap:18px}
+.form .row{display:grid;gap:18px;grid-template-columns:1fr 1fr}
+.field{display:grid;gap:8px}
+.field label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);font-weight:500}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:rgba(255,255,255,.55);border:1px solid rgba(27,23,21,.18);border-radius:4px;padding:14px 16px;transition:border-color .3s,background .3s;min-width:0}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--ink);background:#fff}
+.field textarea{min-height:110px;resize:vertical}
+.form__foot{display:flex;flex-wrap:wrap;align-items:center;gap:16px;justify-content:space-between}
+.form__foot small{color:var(--ink-2);font-size:13px;max-width:40ch}
+.result{display:none;background:var(--ink);color:var(--ivory);padding:28px;border-radius:6px;gap:12px}
+.result.show{display:grid}
+.result h3{font-family:var(--font-display);font-size:28px;font-weight:400}
+.result dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;font-size:15px}
+.result dt{color:rgba(245,240,232,.6)}
+.result p{font-size:14px;color:rgba(245,240,232,.75)}
+.result .demo{display:inline-block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--brass-2);color:var(--brass-2);padding:6px 10px;border-radius:999px;justify-self:start}
+.contact{display:grid;gap:22px;align-content:start}
+.contact .display{font-size:clamp(36px,5vw,72px)}
+.contact dl{display:grid;gap:14px}
+.contact dt{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.contact dd{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:18px}
+.copy{font-size:11px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:6px 12px;transition:background .3s,color .3s}
+.copy:hover{background:var(--ink);color:var(--ivory)}
+@media(min-width:1000px){.book__grid{grid-template-columns:1fr 1.2fr;gap:7vw;align-items:start}}
+
+/* footer */
+footer{background:var(--ink);color:var(--ivory);padding-block:60px max(40px,env(safe-area-inset-bottom,0px))}
+.foot__grid{display:grid;gap:40px}
+.foot__brand{font-family:var(--font-display);font-size:clamp(56px,10vw,140px);line-height:.9;letter-spacing:-.03em}
+.foot__brand em{color:var(--brass-2)}
+.foot__cols{display:grid;gap:30px;grid-template-columns:repeat(2,1fr)}
+.foot__cols h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,240,232,.55);margin-bottom:14px;font-weight:500}
+.foot__cols li{padding:5px 0;font-size:15px}
+.foot__cols a:hover{color:var(--brass-2)}
+.foot__bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:50px;padding-top:20px;border-top:1px solid rgba(245,240,232,.18);font-size:12px;letter-spacing:.08em;color:rgba(245,240,232,.55)}
+@media(min-width:900px){.foot__grid{grid-template-columns:1.2fr 1fr;align-items:end}.foot__cols{grid-template-columns:repeat(3,1fr)}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s)}
+.rv.in,html:not(.js) .rv,.rm .rv{opacity:1;transform:none}
+.mask-reveal{clip-path:inset(0 0 100% 0);transition:clip-path 1.3s var(--ease)}
+.mask-reveal.in,html:not(.js) .mask-reveal,.rm .mask-reveal{clip-path:inset(0 0 0 0)}
+@media(prefers-reduced-motion:reduce){
+ .marquee__track,.hero__scroll i::after{animation:none}
+ .rv,.mask-reveal,.hero__title .w i,.hero__title .eyebrow,.hero__bottom{opacity:1!important;transform:none!important;clip-path:none!important;transition:none!important}
+}
+
+:root{--sand:#E2E8EB;--stone:#C4D0D6;--brass:#8C7A55;--brass-2:#B8A57B;--sea:#3F6577;}
+</style>
+<script>(function(){try{var d=document.documentElement;if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('js');setTimeout(function(){if(!d.classList.contains('ok'))d.classList.remove('js');},4000);window.addEventListener('error',function(){if(!d.classList.contains('ok'))d.classList.remove('js');});}catch(e){}})();</script>
+
+<a class="skip" href="#main">Vai al contenuto</a>
+<div class="cursor" aria-hidden="true"><span class="lbl">Apri</span></div>
+<div class="curtain" aria-hidden="true"><i></i><i></i></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Villa Portoverde, torna all'inizio">Villa Portoverde <small>Foiano della Chiana</small></a>
+  <nav class="nav-links" aria-label="Principale">
+    <a href="#la-villa">La villa</a><a href="#esplora">Esplora</a><a href="#suite">Spazi</a><a href="#esperienze">Il matrimonio</a><a href="#cucina">La tavola</a><a href="#galleria">Galleria</a>
+  </nav>
+  <div class="nav-right">
+    <a class="btn btn-ink" href="#disponibilita"><span>Chiedi la data</span></a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu"><span class="burger__txt">Menu</span><i></i></button>
+  </div>
+</header>
+
+<nav class="menu" id="menu" aria-label="Menu principale">
+  <div></div>
+  <div class="menu__grid">
+    <div class="menu__links">
+      <a href="#la-villa"><sup>01</sup>La villa</a>
+      <a href="#esplora"><sup>02</sup>Esplora</a>
+      <a href="#suite"><sup>03</sup>Gli spazi</a>
+      <a href="#esperienze"><sup>04</sup>Il matrimonio</a>
+      <a href="#cucina"><sup>05</sup>La tavola</a>
+      <a href="#benessere"><sup>06</sup>Perché qui</a>
+      <a href="#disponibilita"><sup>07</sup>Contatti</a>
+    </div>
+    <div class="menu__side">
+      <div class="menu__pic"><img src="media/foto-746f5bbaef.webp" sizes="380px" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></div>
+      <div class="menu__meta"><b>Villa Portoverde</b><span>Via del Porto 18<br>52045 Foiano della Chiana (AR)</span><span>+39 0575 648125</span><span>info@villaportoverde.com</span></div>
+    </div>
+  </div>
+  <div class="menu__foot"><span>Villa</span><span>Foiano della Chiana</span><span>Italiano</span></div>
+</nav>
+
+<main id="main">
+
+<section class="hero" id="top">
+  <div class="hero__pin">
+    <div class="hero__title">
+      <p class="eyebrow">Villa · Foiano della Chiana (AR)</p>
+      <h1 class="display"><span class="w"><i>Villa</i></span><span class="w"><i><em>Portoverde</em></i></span></h1>
+    </div>
+    <div class="hero__frame"><img src="media/foto-c8b2e97f3a.webp" sizes="100vw" width="1600" height="1067" alt="Villa Portoverde" fetchpriority="high" decoding="async"></div>
+    <div class="hero__bottom">
+      <p>Rito civile, piscina e prato in Valdichiana</p>
+      <div class="ctas"><a class="btn btn-light" href="#disponibilita"><span>Chiedi la data</span></a><a class="btn btn-light" href="#esplora"><span>Entra nella villa</span><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+    <div class="hero__scroll">Scorri<i></i></div>
+  </div>
+</section>
+
+<section class="manifesto sec wrap">
+  <p class="eyebrow rv">Villa</p>
+  <p class="lead" id="manifesto-text">Villa Portoverde è a Foiano della Chiana, in via del Porto, a 800 metri dal paese e con vista su Foiano e Cortona. La parte originaria della villa è del 1921; è stata ampliata nel 1999 e restaurata nel 2019.</p>
+  <div class="facts rv">
+    <div><b>1921</b><span>l&#x27;anno della parte originaria della villa</span></div>
+    <div><b>250</b><span>Ospiti al massimo</span></div>
+    <div><b>4,9</b><span>Voto su Matrimonio.com</span></div>
+    <div><b>98%</b><span>Coppie che la consigliano</span></div>
+  </div>
+</section>
+
+<section class="villa sec wrap lazy-sec" id="la-villa">
+  <div class="sec-head">
+    <h2 class="display rv">Benvenuti a <em>Villa Portoverde.</em></h2>
+    <p class="side rv">Dalla chiesa del Porto alla piscina, a piedi.</p>
+  </div>
+  <div class="villa__grid">
+    <figure class="pic pic--par villa__a mask-reveal"><img src="media/foto-c308e252da.webp" sizes="(min-width:900px) 50vw, 100vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></figure>
+    <div class="villa__text">
+      <p class="eyebrow rv">Villa</p>
+      <p class="body-text rv">Il proprietario, Fabrizio Zacchei, è architetto: abita con la moglie nella parte nuova e aiuta gratis gli sposi a progettare l&#x27;allestimento.</p>
+      <p class="body-text rv">Rito civile in villa. Catering libero. Progetto dell&#x27;architetto.</p>
+      <a class="textlink rv" href="#esplora">Percorri la villa</a>
+    </div>
+    <figure class="pic villa__b mask-reveal"><img src="https://villaportoverde.com/wp-content/uploads/2025/04/IMGP3153.jpg" sizes="(min-width:900px) 25vw, 100vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></figure>
+    <figure class="pic villa__c mask-reveal"><img src="media/foto-cb1e0de217.webp" sizes="(min-width:900px) 25vw, 100vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></figure>
+    <div class="villa__d rv">
+      <p class="lead">Rito civile, piscina e prato in Valdichiana</p>
+      <p class="villa__cap"><span>Foiano della Chiana</span><span>Rito civile in villa</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="journey" id="esplora">
+  <div class="journey__pin">
+    <div class="journey__head">
+      <div><p class="eyebrow">Esplora</p><h2 class="display">Dall&#x27;arrivo <em>alla festa</em></h2><div class="journey__prog"><i id="jprog"></i></div></div>
+    </div>
+    <div class="journey__world" id="world">
+      <figure class="plane" data-z="0"><img src="media/foto-7f6fe6e0d7.webp" sizes="(max-width:700px) 84vw, 62vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"><figcaption><b>Cerimonia</b><span>01 · Foiano della Chiana</span></figcaption></figure>
+      <figure class="plane" data-z="1"><img src="media/foto-000fea3275.webp" sizes="(max-width:700px) 84vw, 62vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"><figcaption><b>Meteo</b><span>02 · Foiano della Chiana</span></figcaption></figure>
+      <figure class="plane" data-z="2"><img src="media/foto-1b29fecd10.webp" sizes="(max-width:700px) 84vw, 62vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"><figcaption><b>Spazio</b><span>03 · Foiano della Chiana</span></figcaption></figure>
+      <figure class="plane" data-z="3"><img src="media/foto-52224dc205.webp" sizes="(max-width:700px) 84vw, 62vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"><figcaption><b>Viaggio</b><span>04 · Foiano della Chiana</span></figcaption></figure>
+      <figure class="plane" data-z="4"><img src="media/foto-00156f6190.webp" sizes="(max-width:700px) 84vw, 62vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"><figcaption><b>Foiano della Chiana</b><span>05 · Foiano della Chiana</span></figcaption></figure>
+      <figure class="plane" data-z="5"><img src="https://villaportoverde.com/wp-content/uploads/2019/05/IMGP2545r.jpg" sizes="(max-width:700px) 84vw, 62vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"><figcaption><b>Rito civile in villa</b><span>06 · Foiano della Chiana</span></figcaption></figure>
+    </div>
+    <div class="journey__fog"></div>
+    <p class="journey__hint">Scorri per attraversare la villa</p>
+  </div>
+</section>
+
+<section class="sec wrap lazy-sec" id="esperienze">
+  <div class="sec-head">
+    <h2 class="display rv">Il vostro <em>matrimonio.</em></h2>
+    <p class="side rv">Quello che la struttura offre, raccontato in breve.</p>
+  </div>
+  <div class="exp__track">
+    <article class="exp rv" style="--d:0.0s"><div class="exp__pic"><img src="media/foto-84db0f0c69.webp" sizes="(min-width:1000px) 25vw, 78vw" width="1600" height="1067" alt="Rito civile in villa" loading="lazy" decoding="async"></div><h3>Rito civile in villa</h3><p>Convenzione con il Comune di Foiano della Chiana: il sì in giardino ha valore legale.</p><div class="exp__meta"><span>01</span><span>Villa Portoverde</span></div></article>
+    <article class="exp rv" style="--d:0.1s"><div class="exp__pic"><img src="media/foto-74d941c0ce.webp" sizes="(min-width:1000px) 25vw, 78vw" width="1600" height="1067" alt="Catering libero" loading="lazy" decoding="async"></div><h3>Catering libero</h3><p>Cucina attrezzata e 40 m² esterni coperti e chiudibili per il catering che scegliete voi.</p><div class="exp__meta"><span>02</span><span>Villa Portoverde</span></div></article>
+    <article class="exp rv" style="--d:0.2s"><div class="exp__pic"><img src="media/foto-0deb33e89d.webp" sizes="(min-width:1000px) 25vw, 78vw" width="1600" height="1067" alt="Progetto dell&#x27;architetto" loading="lazy" decoding="async"></div><h3>Progetto dell&#x27;architetto</h3><p>Il proprietario vi consiglia gratis su tavoli, percorsi e allestimento.</p><div class="exp__meta"><span>03</span><span>Villa Portoverde</span></div></article>
+    <article class="exp rv" style="--d:0.3s"><div class="exp__pic"><img src="media/foto-bb16ee5664.webp" sizes="(min-width:1000px) 25vw, 78vw" width="1600" height="1067" alt="Notte in villa" loading="lazy" decoding="async"></div><h3>Notte in villa</h3><p>Dieci posti letto in quattro camere, più alloggi a pochi passi per gli ospiti.</p><div class="exp__meta"><span>04</span><span>Villa Portoverde</span></div></article>
+  </div>
+</section>
+
+<section class="sec wrap lazy-sec" id="cucina">
+  <div class="cuisine__grid">
+    <div>
+      <p class="eyebrow rv">La tavola</p>
+      <h2 class="display rv" style="font-size:clamp(40px,5.5vw,76px);margin:14px 0 26px">In <em>breve.</em></h2>
+      <ul class="menu-list rv">
+        <li><div><b>Rito civile con valore legale in villa</b><small></small></div><i>I</i></li>
+        <li><div><b>Chiesa del Seicento a 200 metri</b><small></small></div><i>II</i></li>
+        <li><div><b>Tensostruttura da oltre 250 posti</b><small></small></div><i>III</i></li>
+        <li><div><b>Parco recintato di 5.000 m²</b><small></small></div><i>IV</i></li>
+        <li><div><b>Piscina 6×12 con scala romana</b><small></small></div><i>V</i></li>
+      </ul>
+      <p class="cuisine__note rv">Per date, numero di ospiti e preventivo: scriveteci o chiamateci.</p>
+    </div>
+    <div class="cuisine__pics">
+      <figure class="pic mask-reveal"><img src="media/foto-da0b89d714.webp" sizes="(min-width:1000px) 25vw, 50vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></figure>
+      <figure class="pic mask-reveal"><img src="media/foto-746f5bbaef.webp" sizes="(min-width:1000px) 25vw, 50vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sea wrap lazy-sec">
+  <div class="sea__bg" id="seabg"><img src="media/foto-90999f8bd0.webp" sizes="100vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></div>
+  <div>
+    <h2 class="display rv">Dalla chiesa del Porto <em>alla piscina, a piedi.</em></h2>
+    <p class="rv">Il proprietario, Fabrizio Zacchei, è architetto: abita con la moglie nella parte nuova e aiuta gratis gli sposi a progettare l&#x27;allestimento.</p>
+    <div class="marquee" aria-hidden="true"><div class="marquee__track"><span>Rito civile con valore legale in villa</span><span>Chiesa del Seicento a 200 metri</span><span>Tensostruttura da oltre 250 posti</span><span>Parco recintato di 5.000 m²</span><span>Piscina 6×12 con scala romana</span><span>Un solo evento alla volta</span><span>Rito civile con valore legale in villa</span><span>Chiesa del Seicento a 200 metri</span><span>Tensostruttura da oltre 250 posti</span><span>Parco recintato di 5.000 m²</span><span>Piscina 6×12 con scala romana</span><span>Un solo evento alla volta</span></div></div>
+  </div>
+</section>
+
+<section class="well sec wrap lazy-sec" id="benessere">
+  <div class="well__grid">
+    <figure class="well__pic mask-reveal"><img src="media/foto-c308e252da.webp" sizes="(min-width:1000px) 42vw, 100vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></figure>
+    <div>
+      <p class="eyebrow rv">Perché qui</p>
+      <h2 class="display rv" style="font-size:clamp(40px,5.5vw,76px);margin:14px 0 20px">Quello che <em>li distingue.</em></h2>
+      <p class="body-text rv" style="color:rgba(245,240,232,.75)">Dalla chiesa del Porto alla piscina, a piedi.</p>
+      <ul class="well__list rv">
+        <li><span>01</span><b>Chiesa o giardino</b><p>La chiesa della Madonna del Porto è a 200 metri: dalla cerimonia al ricevimento si va a piedi.</p></li>
+        <li><span>02</span><b>Piano B già montato</b><p>La tensostruttura accanto alla piscina è pavimentata, illuminata, con teli laterali che si chiudono.</p></li>
+        <li><span>03</span><b>Dal piccolo al grande</b><p>Da 10 invitati fino al prato attrezzabile per oltre mille persone.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="suites sec wrap lazy-sec" id="suite">
+  <div class="sec-head">
+    <h2 class="display rv">Gli spazi <em>e i motivi.</em></h2>
+    <p class="side rv">Il proprietario, Fabrizio Zacchei, è architetto: abita con la moglie nella parte nuova e aiuta gratis gli sposi a progettare l&#x27;allestimento.</p>
+  </div>
+  <div class="suites__layout">
+    <div class="suites__stack" aria-hidden="true">
+      <img class="on" src="media/foto-8642ad6e67.webp" sizes="45vw" width="1600" height="1067" alt="" loading="lazy" decoding="async">
+      <img src="https://villaportoverde.com/wp-content/uploads/2016/11/IMG_20260501_180508.jpg" sizes="45vw" width="1600" height="1067" alt="" loading="lazy" decoding="async">
+      <img src="media/foto-111dcff7dc.webp" sizes="45vw" width="1600" height="1067" alt="" loading="lazy" decoding="async">
+      <img src="media/foto-25a52ad693.webp" sizes="45vw" width="1600" height="1067" alt="" loading="lazy" decoding="async">
+    </div>
+    <div class="suites__list">
+      <article class="suite on" data-i="0">
+        <div class="suite__pic"><img src="media/foto-8642ad6e67.webp" sizes="100vw" width="1600" height="1067" alt="Tensostruttura" loading="lazy" decoding="async"></div>
+        <div class="suite__head"><h3>Tensostruttura</h3><span>Ricevimento · oltre 250 posti a sedere</span></div>
+        <p>Pavimentata, Chiusure laterali, Accanto alla piscina</p>
+        <div class="suite__meta"><span>Pavimentata</span><span>Chiusure laterali</span><span>Accanto alla piscina</span></div>
+        <div class="suite__foot"><a class="textlink" href="#disponibilita">Chiedi una visita</a></div>
+      </article>
+      <article class="suite" data-i="1">
+        <div class="suite__pic"><img src="https://villaportoverde.com/wp-content/uploads/2016/11/IMG_20260501_180508.jpg" sizes="100vw" width="1600" height="1067" alt="Prato" loading="lazy" decoding="async"></div>
+        <div class="suite__head"><h3>Prato</h3><span>Rito e aperitivo · oltre 1.000 posti</span></div>
+        <p>Gazebo, Statue in cotto, Orci</p>
+        <div class="suite__meta"><span>Gazebo</span><span>Statue in cotto</span><span>Orci</span></div>
+        <div class="suite__foot"><a class="textlink" href="#disponibilita">Chiedi una visita</a></div>
+      </article>
+      <article class="suite" data-i="2">
+        <div class="suite__pic"><img src="media/foto-111dcff7dc.webp" sizes="100vw" width="1600" height="1067" alt="Piscina" loading="lazy" decoding="async"></div>
+        <div class="suite__head"><h3>Piscina</h3><span>Aperitivo e sera · 6×12 con scala romana</span></div>
+        <p>Porticato, Idromassaggio</p>
+        <div class="suite__meta"><span>Porticato</span><span>Idromassaggio</span></div>
+        <div class="suite__foot"><a class="textlink" href="#disponibilita">Chiedi una visita</a></div>
+      </article>
+      <article class="suite" data-i="3">
+        <div class="suite__pic"><img src="media/foto-25a52ad693.webp" sizes="100vw" width="1600" height="1067" alt="Chiesa della Madonna del Porto" loading="lazy" decoding="async"></div>
+        <div class="suite__head"><h3>Chiesa della Madonna del Porto</h3><span>Rito religioso · Seicento, a 200 metri</span></div>
+        <p>A piedi, Campagna</p>
+        <div class="suite__meta"><span>A piedi</span><span>Campagna</span></div>
+        <div class="suite__foot"><a class="textlink" href="#disponibilita">Chiedi una visita</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap lazy-sec" id="galleria">
+  <div class="sec-head">
+    <h2 class="display rv">Uno sguardo <em>a Villa Portoverde.</em></h2>
+    <p class="side rv">Le fotografie sono quelle della struttura.</p>
+  </div>
+  <div class="gal" id="gal">
+    <button class="r34 tall" data-cap="Cerimonia"><img src="https://villaportoverde.com/wp-content/uploads/2025/04/IMGP3153.jpg" sizes="(min-width:900px) 25vw, 50vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></button>
+    <button class="r43 wide" data-cap="Meteo"><img src="media/foto-cb1e0de217.webp" sizes="(min-width:900px) 25vw, 50vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></button>
+    <button class="r11" data-cap="Spazio"><img src="media/foto-7f6fe6e0d7.webp" sizes="(min-width:900px) 25vw, 50vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></button>
+    <button class="r11" data-cap="Viaggio"><img src="media/foto-000fea3275.webp" sizes="(min-width:900px) 25vw, 50vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></button>
+    <button class="r34 tall" data-cap="Foiano della Chiana"><img src="media/foto-1b29fecd10.webp" sizes="(min-width:900px) 25vw, 50vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></button>
+    <button class="r11" data-cap="Rito civile in villa"><img src="media/foto-52224dc205.webp" sizes="(min-width:900px) 25vw, 50vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></button>
+    <button class="r11" data-cap="Catering libero"><img src="media/foto-00156f6190.webp" sizes="(min-width:900px) 25vw, 50vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></button>
+    <button class="r43 wide" data-cap="Villa Portoverde"><img src="https://villaportoverde.com/wp-content/uploads/2019/05/IMGP2545r.jpg" sizes="(min-width:900px) 25vw, 50vw" width="1600" height="1067" alt="Villa Portoverde" loading="lazy" decoding="async"></button>
+  </div>
+</section>
+
+<section class="book sec wrap" id="disponibilita">
+  <div class="book__grid">
+    <div class="contact">
+      <p class="eyebrow rv">Contatti</p>
+      <h2 class="display rv">Diteci la data, <em>vi diciamo se è libera.</em></h2>
+      <p class="body-text rv">Scriveteci la data che avete in mente e quanti siete: vi rispondono con la disponibilità e un invito a vedere il posto.</p>
+      <dl class="rv">
+        <div><dt>Telefono</dt><dd><a href="tel:+390575648125">+39 0575 648125</a><button class="copy" type="button" data-copy="+39 0575 648125">Copia</button></dd></div><div><dt>WhatsApp</dt><dd><a href="https://wa.me/393475342929" target="_blank" rel="noopener">Scriveteci su WhatsApp</a></dd></div><div><dt>Email</dt><dd><a href="mailto:info@villaportoverde.com">info@villaportoverde.com</a><button class="copy" type="button" data-copy="info@villaportoverde.com">Copia</button></dd></div><div><dt>Indirizzo</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Villa+Portoverde+Via+del+Porto+18+52045+Foiano+della+Chiana+AR" target="_blank" rel="noopener">Via del Porto 18, 52045 Foiano della Chiana (AR)</a></dd></div>
+      </dl>
+    </div>
+    <div>
+      <form class="form rv" id="form" novalidate>
+        <div class="row">
+          <div class="field"><label for="arrivo">Dal</label><input id="arrivo" name="arrivo" type="date" required></div>
+          <div class="field"><label for="partenza">Al</label><input id="partenza" name="partenza" type="date" required></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="ospiti">Invitati</label><select id="ospiti" name="ospiti"><option>Fino a 120</option><option>120 – 250</option><option>Non lo sappiamo ancora</option></select></div>
+          <div class="field"><label for="formula">Evento</label><select id="formula" name="formula"><option>Matrimonio</option><option>Evento privato o festa</option><option>Evento aziendale</option><option>Prima una visita</option></select></div>
+        </div>
+        <div class="field"><label for="nome">Nome e cognome</label><input id="nome" name="nome" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="note">Note (rito, catering, domande)</label><textarea id="note" name="note"></textarea></div>
+        <div class="form__foot"><button class="btn btn-ink" type="submit"><span>Invia la richiesta</span></button><small>Nessun impegno. Vi scriviamo noi con la disponibilità.</small></div>
+      </form>
+      <div class="result" id="result" role="status" aria-live="polite">
+        <span class="demo">Dimostrazione</span>
+        <h3>Richiesta registrata</h3>
+        <dl id="result-dl"></dl>
+        <p>In produzione questa richiesta arriva alla villa via email. In questa anteprima non viene inviato nulla.</p>
+        <button class="textlink" type="button" id="again" style="color:var(--brass-2);justify-self:start">Nuova richiesta</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap">
+  <div class="foot__grid">
+    <div class="foot__brand">Villa <em>Portoverde</em></div>
+    <div class="foot__cols">
+      <div><h4>La villa</h4><ul><li><a href="#la-villa">La villa</a></li><li><a href="#esplora">Esplora</a></li><li><a href="#suite">Gli spazi</a></li><li><a href="#galleria">Galleria</a></li></ul></div>
+      <div><h4>Il matrimonio</h4><ul><li><a href="#esperienze">Servizi</a></li><li><a href="#cucina">La tavola</a></li><li><a href="#benessere">Perché qui</a></li><li><a href="#disponibilita">Contatti</a></li></ul></div>
+      <div><h4>Contatti</h4><ul><li>Via del Porto 18</li><li>52045 Foiano della Chiana (AR)</li><li><a href="tel:+390575648125">+39 0575 648125</a></li><li><a href="mailto:info@villaportoverde.com">info@villaportoverde.com</a></li></ul></div>
+    </div>
+  </div>
+  <div class="foot__bottom"><span>© 2026 Villa Portoverde</span><span>Anteprima Umbra Agency · Foto: Villa Portoverde</span></div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galleria">
+  <button class="lb-close" id="lb-close">Chiudi</button>
+  <button class="lb-btn lb-prev" id="lb-prev" aria-label="Precedente"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button>
+  <figure><img id="lb-img" src="" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button class="lb-btn lb-next" id="lb-next" aria-label="Successiva"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+'use strict';
+var doc=document.documentElement;
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var fine=window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+var hasGsap=typeof gsap!=='undefined'&&typeof ScrollTrigger!=='undefined';
+if(hasGsap&&!reduce){doc.classList.add('js');gsap.registerPlugin(ScrollTrigger);}else{doc.classList.remove('js');}
+if(reduce)doc.classList.add('rm');
+var $=function(s,c){return (c||document).querySelector(s)},$$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+
+
+/* ---------- lazy images: start loading ~2 screens ahead ---------- */
+if('IntersectionObserver' in window){var lzImgs=$$('img[loading="lazy"]');var lzIO=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.loading='eager';lzIO.unobserve(e.target);}})},{rootMargin:'300% 0px 300% 0px'});lzImgs.forEach(function(i,k){if(k<6)i.loading='eager';else lzIO.observe(i)});}
+
+/* ---------- menu ---------- */
+var burger=$('#burger'),menu=$('#menu'),nav=$('#nav');
+function setMenu(open){document.body.classList.toggle('menu-open',open);burger.setAttribute('aria-expanded',open);burger.querySelector('.burger__txt').textContent=open?'Chiudi':'Menu';if(open)nav.classList.remove('is-dark');else updateNav();}
+burger.addEventListener('click',function(){setMenu(!document.body.classList.contains('menu-open'))});
+$$('a',menu).forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){setMenu(false);closeLb();}});
+
+/* ---------- nav state ---------- */
+var darkZones=[];
+function updateNav(){var y=window.scrollY||window.pageYOffset;var solid=y>window.innerHeight*0.9;nav.classList.toggle('is-solid',solid);var dark=false;for(var i=0;i<darkZones.length;i++){var r=darkZones[i].getBoundingClientRect();if(r.top<=60&&r.bottom>60){dark=true;break;}}nav.classList.toggle('is-dark',dark&&!solid?true:dark);if(dark)nav.classList.remove('is-solid');}
+darkZones=$$('.journey,.well,.sea,footer');
+window.addEventListener('scroll',updateNav,{passive:true});updateNav();
+
+/* ---------- copy buttons ---------- */
+$$('.copy').forEach(function(b){b.addEventListener('click',function(){var t=b.getAttribute('data-copy');var done=function(){var o=b.textContent;b.textContent='Copiato';setTimeout(function(){b.textContent=o},1400)};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,function(){selectText(b.previousElementSibling);done()})}else{selectText(b.previousElementSibling);done()}})});
+function selectText(el){if(!el)return;var r=document.createRange();r.selectNodeContents(el);var s=window.getSelection();s.removeAllRanges();s.addRange(r);}
+
+/* ---------- form (demo) ---------- */
+var form=$('#form'),result=$('#result');
+var today=new Date();var iso=function(d){return d.toISOString().slice(0,10)};
+var arr=$('#arrivo'),dep=$('#partenza');arr.min=iso(today);var t2=new Date(today);t2.setDate(t2.getDate()+2);dep.min=iso(t2);
+var d1=new Date(today);d1.setDate(d1.getDate()+21);var d2=new Date(d1);d2.setDate(d2.getDate()+5);arr.value=iso(d1);dep.value=iso(d2);
+arr.addEventListener('change',function(){var m=new Date(arr.value);if(isNaN(m))return;m.setDate(m.getDate()+1);dep.min=iso(m);if(dep.value&&dep.value<=arr.value){dep.value=iso(m)}});
+form.addEventListener('submit',function(e){e.preventDefault();if(!form.checkValidity()){var bad=form.querySelector(':invalid');if(bad)bad.focus();form.reportValidity&&form.reportValidity();return;}
+ var a=new Date(arr.value),p=new Date(dep.value);var nights=Math.max(1,Math.round((p-a)/864e5));var fmt=function(d){return d.toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'})};
+ var rows=[['Periodo',fmt(a)+' → '+fmt(p)+' · '+nights+(nights===1?' notte':' notti')],['Invitati',$('#ospiti').value],['Evento',$('#formula').value],['Nome',$('#nome').value],['Email',$('#email').value]];
+ var note=$('#note').value.trim();if(note)rows.push(['Note',note]);
+ $('#result-dl').innerHTML=rows.map(function(r){return '<dt>'+r[0]+'</dt><dd>'+esc(r[1])+'</dd>'}).join('');
+ form.style.display='none';result.classList.add('show');result.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});});
+$('#again').addEventListener('click',function(){result.classList.remove('show');form.style.display='';form.querySelector('#nome').focus();});
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+/* ---------- lightbox ---------- */
+var lb=$('#lightbox'),lbImg=$('#lb-img'),lbCap=$('#lb-cap'),gal=$$('#gal button'),cur=0,lastFocus=null;
+function openLb(i){cur=(i+gal.length)%gal.length;var img=gal[cur].querySelector('img');var src=img.currentSrc||img.src;lbImg.src=src;lbImg.alt=img.alt;lbCap.textContent=(cur+1)+' / '+gal.length+' — '+gal[cur].getAttribute('data-cap');lb.classList.add('open');document.body.style.overflow='hidden';}
+function closeLb(){if(!lb.classList.contains('open'))return;lb.classList.remove('open');document.body.style.overflow='';if(lastFocus)lastFocus.focus();}
+gal.forEach(function(b,i){b.addEventListener('click',function(){lastFocus=b;openLb(i);$('#lb-close').focus();})});
+$('#lb-close').addEventListener('click',closeLb);$('#lb-prev').addEventListener('click',function(){openLb(cur-1)});$('#lb-next').addEventListener('click',function(){openLb(cur+1)});
+lb.addEventListener('click',function(e){if(e.target===lb)closeLb()});
+document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='ArrowRight')openLb(cur+1);if(e.key==='ArrowLeft')openLb(cur-1);});
+var tx=null;lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',function(e){if(tx===null)return;var dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)openLb(cur+(dx<0?1:-1));tx=null;});
+
+/* ---------- suites hover/scroll sync ---------- */
+var suites=$$('.suite'),stack=$$('.suites__stack img');
+function setSuite(i){suites.forEach(function(s,k){s.classList.toggle('on',k===i)});stack.forEach(function(im,k){im.classList.toggle('on',k===i)});}
+suites.forEach(function(s,i){s.addEventListener('mouseenter',function(){setSuite(i)});s.addEventListener('focusin',function(){setSuite(i)});});
+
+/* ---------- static fallbacks when no GSAP ---------- */
+if(!hasGsap||reduce){
+  var hero=$('.hero');hero.classList.add('ready');
+  $$('.manifesto .lead .w').forEach(function(w){w.classList.add('on')});
+  return;
+}
+
+/* ---------- curtain + hero intro ---------- */
+var curtain=$('.curtain'),heroEl=$('.hero');
+window.addEventListener('load',function(){
+  gsap.to(curtain.children[0],{xPercent:-101,duration:1,ease:'power3.inOut'});
+  gsap.to(curtain.children[1],{xPercent:101,duration:1,ease:'power3.inOut',onComplete:function(){curtain.classList.add('done')}});
+  gsap.delayedCall(.35,function(){heroEl.classList.add('ready')});
+});
+setTimeout(function(){curtain.classList.add('done');heroEl.classList.add('ready')},3200);
+
+/* hero expand on scroll */
+var frame=$('.hero__frame'),frameImg=$('.hero__frame img'),heroTitle=$('.hero__title'),heroBottom=$('.hero__bottom');
+var mobile=window.matchMedia('(max-width:700px)').matches;
+var startInset=mobile?'inset(28% 8% 14% 8% round 6px)':'inset(22% 16% 12% 16% round 6px)';
+gsap.set(frame,{clipPath:startInset});
+var heroTl=gsap.timeline({scrollTrigger:{trigger:heroEl,start:'top top',end:'bottom bottom',scrub:.7}});
+heroTl.to(frame,{clipPath:'inset(0% 0% 0% 0% round 0px)',ease:'power2.inOut',duration:1},0)
+ .to(frameImg,{scale:1,ease:'none',duration:1},0)
+ .to(heroTitle,{yPercent:-40,opacity:0,ease:'power1.in',duration:.5},0)
+ .to(heroBottom,{opacity:1,y:0,ease:'power2.out',duration:.4},.55)
+ .to($('.hero__scroll'),{opacity:0,duration:.2},0);
+
+/* ---------- manifesto word reveal ---------- */
+var mt=$('#manifesto-text');mt.innerHTML=mt.textContent.split(' ').map(function(w){return '<span class="w">'+w+'</span>'}).join(' ');
+var words=$$('.w',mt);
+ScrollTrigger.create({trigger:mt,start:'top 80%',end:'bottom 45%',scrub:true,onUpdate:function(self){var n=Math.floor(self.progress*words.length*1.15);words.forEach(function(w,i){w.classList.toggle('on',i<n)})}});
+
+/* ---------- reveals ---------- */
+(function(){var els=$$('.rv,.mask-reveal');if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting||e.intersectionRatio>0){e.target.classList.add('in');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px',threshold:0});els.forEach(function(el){io.observe(el)});}else{els.forEach(function(el){ScrollTrigger.create({trigger:el,start:'top 88%',once:true,onEnter:function(){el.classList.add('in')}})});}setTimeout(function(){els.forEach(function(el){var r=el.getBoundingClientRect();if(r.top<window.innerHeight&&r.bottom>0)el.classList.add('in');})},1200);})();
+/* parallax images */
+$$('.pic--par img').forEach(function(img){gsap.fromTo(img,{yPercent:-9},{yPercent:0,ease:'none',scrollTrigger:{trigger:img.parentNode,start:'top bottom',end:'bottom top',scrub:true}})});
+gsap.fromTo('#seabg',{yPercent:-8},{yPercent:8,ease:'none',scrollTrigger:{trigger:'.sea',start:'top bottom',end:'bottom top',scrub:true}});
+
+/* ---------- 3D journey ---------- */
+var world=$('#world'),planes=$$('.plane'),prog=$('#jprog');
+var GAP=mobile?560:640,N=planes.length;
+var offs=[[-20,-8],[18,10],[-22,6],[20,-10],[-16,8],[0,0]];
+planes.forEach(function(p,i){var o=offs[i]||[0,0];p._x=mobile?o[0]*0.4:o[0];p._y=mobile?o[1]*0.45:o[1];p._z=-i*GAP;});
+var cam={z:0,rx:0,ry:0},target={rx:0,ry:0};
+function renderWorld(){var s=0;for(var i=0;i<N;i++){var p=planes[i];var rel=p._z+cam.z;var op;if(rel>40){op=gsap.utils.clamp(0,1,1-(rel-40)/200)}else{op=gsap.utils.clamp(0,1,1-((-rel)-250)/(GAP*2.4));}
+  var sc=1;if(rel>0){sc=1+rel/900;}
+  p.style.opacity=op.toFixed(3);p.style.transform='translate(-50%,-50%) translate3d('+p._x+'vw,'+p._y+'vh,'+p._z+'px) scale('+sc.toFixed(3)+')';p.style.visibility=op<=0.01?'hidden':'visible';}
+  world.style.transform='rotateX('+cam.rx.toFixed(2)+'deg) rotateY('+cam.ry.toFixed(2)+'deg) translateZ('+cam.z.toFixed(1)+'px)';}
+renderWorld();
+gsap.to(cam,{z:(N-1)*GAP,ease:'none',scrollTrigger:{trigger:'.journey',start:'top top',end:'bottom bottom',scrub:.8,onUpdate:function(self){prog.style.transform='scaleX('+self.progress.toFixed(3)+')';}},onUpdate:renderWorld});
+if(fine){var jp=$('.journey__pin');jp.addEventListener('mousemove',function(e){var r=jp.getBoundingClientRect();target.ry=((e.clientX-r.left)/r.width-.5)*6;target.rx=-((e.clientY-r.top)/r.height-.5)*4;});
+  gsap.ticker.add(function(){var ch=false;if(Math.abs(target.rx-cam.rx)>0.01){cam.rx+=(target.rx-cam.rx)*.06;ch=true}if(Math.abs(target.ry-cam.ry)>0.01){cam.ry+=(target.ry-cam.ry)*.06;ch=true}if(ch)renderWorld();});}
+
+/* ---------- suites: scroll-driven active state on desktop ---------- */
+if(window.matchMedia('(min-width:1000px)').matches){suites.forEach(function(s,i){ScrollTrigger.create({trigger:s,start:'top 55%',end:'bottom 55%',onEnter:function(){setSuite(i)},onEnterBack:function(){setSuite(i)}})});}
+
+/* ---------- cursor + magnetic ---------- */
+if(fine){var cursor=$('.cursor');document.body.classList.add('cursor-on');var cx=gsap.quickTo(cursor,'x',{duration:.25,ease:'power3'}),cy=gsap.quickTo(cursor,'y',{duration:.25,ease:'power3'});
+  window.addEventListener('mousemove',function(e){cx(e.clientX);cy(e.clientY)});
+  $$('a,button,.suite').forEach(function(el){el.addEventListener('mouseenter',function(){cursor.classList.add('is-link');if(el.closest('#gal'))cursor.classList.add('is-view')});el.addEventListener('mouseleave',function(){cursor.classList.remove('is-link','is-view')});});
+  $$('.btn').forEach(function(b){var bx=gsap.quickTo(b,'x',{duration:.4,ease:'power3'}),by=gsap.quickTo(b,'y',{duration:.4,ease:'power3'});b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect();bx((e.clientX-r.left-r.width/2)*.25);by((e.clientY-r.top-r.height/2)*.35)});b.addEventListener('mouseleave',function(){bx(0);by(0)});});}
+
+/* refresh after images/fonts settle */
+window.addEventListener('load',function(){ScrollTrigger.refresh()});
+doc.classList.add('ok');
+})();
+</script>
+
+<script>
+(function(){
+var D=document,H=D.documentElement;if(!H.classList.contains('volo-on'))return;
+var CFG={"frames": ["media/foto-bd34ecf676.webp", "media/foto-cb9cd4bc37.webp", "media/foto-f373b59f9f.webp", "media/foto-21b9268e10.webp", "media/foto-c8b2e97f3a.webp"], "scen": ["Rito civile sul prato", "Cena in tensostruttura"], "cer": null},FR=CFG.frames,CER=CFG.cer;
+function go(){
+var box=D.getElementById('volo'),T=window.THREE,done=false,raf=0,R;
+function end(fast){if(done)return;done=true;try{sessionStorage.setItem('volo:'+location.pathname,'1')}catch(e){}
+ box.classList.add('out');H.classList.remove('volo-on');
+ setTimeout(function(){cancelAnimationFrame(raf);try{R.dispose()}catch(e){}box.parentNode&&box.parentNode.removeChild(box)},fast?200:600)}
+D.getElementById('vskip').addEventListener('click',function(){end(true)});
+D.addEventListener('keydown',function(e){if(e.key==='Escape')end(true)});
+if(!T){end(true);return}
+try{R=new T.WebGLRenderer({antialias:true,alpha:false,powerPreference:'high-performance'})}catch(e){end(true);return}
+R.setPixelRatio(Math.min(window.devicePixelRatio||1,2));R.autoClear=false;R.setClearColor(0x06080a,1);
+box.insertBefore(R.domElement,box.firstChild);
+var W=1,HH=1;
+/* ================= foto ================= */
+var pS=new T.Scene(),pC=new T.OrthographicCamera(-1,1,1,-1,0,1);
+var blank=new T.DataTexture(new Uint8Array([6,8,10,255]),1,1,T.RGBAFormat);blank.needsUpdate=true;
+var PU={tA:{value:blank},tB:{value:blank},sA:{value:new T.Vector2(800,550)},sB:{value:new T.Vector2(800,550)},uAsp:{value:1},zA:{value:1},zB:{value:1},
+ uT:{value:0},uTime:{value:0},uDir:{value:0},cA:{value:0},cB:{value:0}};
+var C0=CER||{ax:0,ay:0,r0:0,r1:0,rs:1,g:0,bw:0,cs:1,lc:[0,0],lr:[1,1]};
+function f(x){x=+x;return (x%1===0?x.toFixed(1):String(x))}
+var cerGL=['const float AX='+f(C0.ax)+',AY='+f(C0.ay)+',R0='+f(C0.r0)+',R1='+f(C0.r1)+',RS='+f(C0.rs)+',G='+f(C0.g)+',BW='+f(C0.bw)+',CS='+f(C0.cs)+';',
+ 'const vec2 LC=vec2('+f(C0.lc[0])+','+f(C0.lc[1])+'),LR=vec2('+f(C0.lr[0])+','+f(C0.lr[1])+');',
+ 'float box(vec2 q,vec2 h){vec2 d=abs(q)-h;float o=length(max(d,0.))+min(max(d.x,d.y),0.);return 1.-smoothstep(.45,1.25,abs(o));}',
+ 'float cer(vec2 P,float p){float v=0.;',
+ ' float nr=floor((R1-R0)/RS)+1.;',
+ ' float run=(1.-smoothstep(.5,1.3,abs(abs(P.x-AX)-3.5)))*step(AY+2.,P.y)*step(P.y,AY+2.+(R1+8.-AY)*clamp(p*1.6,0.,1.));v=max(v,run*.8);',
+ ' vec2 a=(P-vec2(AX,AY))*vec2(1.,2.2);float r=length(a);v=max(v,(1.-smoothstep(.7,1.8,abs(r-15.)))*step(P.y,AY+.5)*step(.01,p));',
+ ' v=max(v,(1.-smoothstep(1.2,3.4,length(P-vec2(AX-15.,AY))))*step(.01,p));v=max(v,(1.-smoothstep(1.2,3.4,length(P-vec2(AX+15.,AY))))*step(.01,p));',
+ ' float ri=floor((P.y-R0)/RS);',
+ ' if(ri>=0.&&ri<nr&&ri<p*nr*1.25-1.){float dx=abs(P.x-AX)-G;if(dx>0.&&dx<BW){float ci=floor(dx/CS);',
+ '  vec2 q=vec2(dx-(ci+.5)*CS,P.y-R0-(ri+.5)*RS);v=max(v,box(q,vec2(CS*.31,RS*.27)));}}',
+ ' vec2 e=(P-LC)/LR;v*=step(dot(e,e),1.);return v;}'].join('\n');
+var pM=new T.ShaderMaterial({uniforms:PU,depthTest:false,depthWrite:false,
+ vertexShader:'varying vec2 vUv;void main(){vUv=uv;gl_Position=vec4(position.xy,0.,1.);}',
+ fragmentShader:['precision highp float;uniform sampler2D tA,tB;uniform vec2 sA,sB;uniform float uAsp,zA,zB,uT,uTime,uDir,cA,cB;varying vec2 vUv;',
+ 'vec2 cov(vec2 uv,float ia,float z){vec2 s=uAsp>ia?vec2(1.,ia/uAsp):vec2(uAsp/ia,1.);return (uv-.5)*s/z+.5;}',
+ 'float h(vec2 p){return fract(sin(dot(p,vec2(12.9898,78.233)))*43758.5453);}',
+ cerGL,
+ 'vec3 sharp(sampler2D t,vec2 u,vec2 s){vec2 px=1./s;vec3 c=texture2D(t,u).rgb;vec3 b=(texture2D(t,u+vec2(px.x,0)).rgb+texture2D(t,u-vec2(px.x,0)).rgb+texture2D(t,u+vec2(0,px.y)).rgb+texture2D(t,u-vec2(0,px.y)).rgb)*.25;return clamp(c+(c-b)*.55,0.,1.);}',
+ 'vec3 grade(vec3 c){c=pow(c,vec3(.96));float l=dot(c,vec3(.3,.59,.11));c=mix(vec3(l),c,1.08);return c;}',
+ 'vec3 gold(vec3 c,vec2 u,vec2 s,float p){if(p<=0.)return c;vec2 P=vec2(u.x*s.x,(1.-u.y)*s.y);float v=cer(P,p);return mix(c,vec3(1.,.9,.62),v*.92)+vec3(1.,.85,.5)*v*.25;}',
+ 'void main(){vec2 uv=vUv;',
+ ' float c=mix(1.-uv.y,uv.x,uDir)*.82+(uDir>.5?uv.y:uv.x)*.18;',
+ ' float e=mix(-.25,1.25,uT),d=c-e,near=1.-smoothstep(0.,.14,abs(d));',
+ ' vec2 off=vec2(near*.02*sin(uv.y*36.+uTime*9.),0.);',
+ ' vec2 ua=cov(uv+off,sA.x/sA.y,zA),ub=cov(uv-off*.6,sB.x/sB.y,zB);',
+ ' vec3 A=gold(grade(sharp(tA,ua,sA)),ua,sA,cA);',
+ ' vec3 B=gold(grade(sharp(tB,ub,sB)),ub,sB,cB);',
+ ' float ca=near*.006;B.r=mix(B.r,texture2D(tB,ub+vec2(ca,0)).r,near);A.b=mix(A.b,texture2D(tA,ua-vec2(ca,0)).b,near);',
+ ' vec2 px=1./sB;float gx=dot(texture2D(tB,ub+vec2(px.x,0)).rgb-texture2D(tB,ub-vec2(px.x,0)).rgb,vec3(.33));',
+ ' float gy=dot(texture2D(tB,ub+vec2(0,px.y)).rgb-texture2D(tB,ub-vec2(0,px.y)).rgb,vec3(.33));',
+ ' float ed=smoothstep(.05,.2,length(vec2(gx,gy)));float fill=smoothstep(.01,.22,-d);',
+ ' vec3 Bm=mix(mix(A*.2,vec3(.05,.06,.07),.6)+vec3(.98,.93,.8)*ed,B,fill);',
+ ' float m=smoothstep(.01,-.01,d);vec3 col=mix(A,Bm,m);',
+ ' col+=vec3(.98,.94,.84)*smoothstep(.005,0.,abs(d))*.85*step(.001,uT)*step(uT,.999);',
+ ' col+=(h(uv*vec2(1013.,677.)+fract(uTime))-.5)*.022;',
+ ' vec2 q=uv-.5;col*=1.-dot(q,q)*.55;',
+ ' gl_FragColor=vec4(col,1.);}'].join('\n')});
+pS.add(new T.Mesh(new T.PlaneGeometry(2,2),pM));
+/* ================= 3D ================= */
+var S=new T.Scene(),C=new T.PerspectiveCamera(36,1,.1,700);
+var WHITE=new T.Color(0xf3ecdc),GOLD=new T.Color(0xf0cf86);
+function lmat(u,col){return new T.ShaderMaterial({uniforms:{uDraw:u.d,uOp:u.o,uCol:{value:col}},transparent:true,depthWrite:false,blending:T.AdditiveBlending,
+ vertexShader:'attribute float aD;varying float vD,vZ;void main(){vD=aD;vec4 mv=modelViewMatrix*vec4(position,1.);vZ=-mv.z;gl_Position=projectionMatrix*mv;}',
+ fragmentShader:'uniform float uDraw,uOp;uniform vec3 uCol;varying float vD,vZ;void main(){if(vD>uDraw)discard;float fg=1.-smoothstep(70.,190.,vZ);float hot=smoothstep(.07,0.,uDraw-vD);gl_FragColor=vec4(uCol*(.85+2.4*hot),min(1.,uOp*fg));}'})}
+function Geo(){this.P=[];this.n=0;this.D=[]}
+Geo.prototype.s=function(a,b){this.P.push(a[0],a[1],a[2],b[0],b[1],b[2]);this.D.push(this.n,this.n);this.n++};
+Geo.prototype.mesh=function(col){var g=new T.BufferGeometry(),n=this.n;g.setAttribute('position',new T.Float32BufferAttribute(this.P,3));
+ g.setAttribute('aD',new T.Float32BufferAttribute(this.D.map(function(v){return v/Math.max(1,n)}),1));var u={d:{value:0},o:{value:1}};var m=new T.LineSegments(g,lmat(u,col));m.u=u;S.add(m);return m};
+function box3(G,x,z,w,d,h,y0){y0=y0||0;var X=x+w,Z=z+d,Y=y0+h,c=[[x,z],[X,z],[X,Z],[x,Z]];
+ c.forEach(function(p,i){var q=c[(i+1)%4];G.s([p[0],y0,p[1]],[q[0],y0,q[1]])});c.forEach(function(p){G.s([p[0],y0,p[1]],[p[0],Y,p[1]])});
+ c.forEach(function(p,i){var q=c[(i+1)%4];G.s([p[0],Y,p[1]],[q[0],Y,q[1]])})}
+function hip(G,x,z,w,d,y,r){var X=x+w,Z=z+d,cz=z+d/2,cx=x+w/2,k=Math.min(w,d)/2,t=y+r,a=w>=d?[x+k,cz]:[cx,z+k],b=w>=d?[X-k,cz]:[cx,Z-k];
+ G.s([a[0],t,a[1]],[b[0],t,b[1]]);G.s([x,y,z],[a[0],t,a[1]]);G.s([x,y,Z],[a[0],t,a[1]]);G.s([X,y,z],[b[0],t,b[1]]);G.s([X,y,Z],[b[0],t,b[1]])}
+function gable(G,x,z,w,d,y,r){var X=x+w,c=z+d/2,Z=z+d;G.s([x,y+r,c],[X,y+r,c]);[[x,z],[x,Z],[X,z],[X,Z]].forEach(function(p){G.s([p[0],y,p[1]],[p[0],y+r,c])})}
+function wins(G,x0,z,y0,cols,rows,sx,sy,w,h){for(var r=0;r<rows;r++)for(var c=0;c<cols;c++){var x=x0+c*sx,y=y0+r*sy;G.s([x,y,z],[x+w,y,z]);G.s([x+w,y,z],[x+w,y+h,z]);G.s([x+w,y+h,z],[x,y+h,z]);G.s([x,y+h,z],[x,y,z])}}
+function arches(G,x0,z,n,sx,w,h){for(var i=0;i<n;i++){var x=x0+i*sx,cx=x+w/2;G.s([x,0,z],[x,h*.7,z]);G.s([x+w,0,z],[x+w,h*.7,z]);
+ for(var k=0;k<6;k++){var a0=Math.PI*k/6,a1=Math.PI*(k+1)/6;G.s([cx-Math.cos(a0)*w/2,h*.7+Math.sin(a0)*w/2,z],[cx-Math.cos(a1)*w/2,h*.7+Math.sin(a1)*w/2,z])}}}
+function ell(G,cx,cz,rx,rz,y,n){for(var i=0;i<n;i++){var a=i/n*Math.PI*2,b=(i+1)/n*Math.PI*2;G.s([cx+Math.cos(a)*rx,y,cz+Math.sin(a)*rz],[cx+Math.cos(b)*rx,y,cz+Math.sin(b)*rz])}}
+/* villa */
+var V=new Geo();box3(V,-6,-5,12,10,12);hip(V,-6,-5,12,10,12,3.2);wins(V,-4.6,5.01,1.2,5,3,2,3.6,1.1,2.2);
+box3(V,-34,-3,27,8,6);gable(V,-34,-3,27,8,6,2.4);arches(V,-33,5.01,9,2.9,2.1,4.6);
+box3(V,7,-3,14,8,6);gable(V,7,-3,14,8,6,2.4);wins(V,8.2,5.01,1.4,6,1,2.2,0,1.2,2);
+box3(V,-38,-4,4.5,4.5,13);hip(V,-38,-4,4.5,4.5,13,2.6);
+ell(V,0,19,10,8,0,56);V.s([-1.6,0,27],[-1.6,0,48]);V.s([1.6,0,27],[1.6,0,48]);
+var villa=V.mesh(WHITE);
+/* scenario 1: cerimonia sul prato — arco fiorito, navata, file di sedie */
+var Ce=new Geo();
+[-.25,.25].forEach(function(dz){var z=12.4+dz;Ce.s([-2.4,0,z],[-2.4,3.6,z]);Ce.s([2.4,0,z],[2.4,3.6,z]);
+ for(var k=0;k<14;k++){var a0=Math.PI*k/14,a1=Math.PI*(k+1)/14;Ce.s([-Math.cos(a0)*2.4,3.6+Math.sin(a0)*2.4,z],[-Math.cos(a1)*2.4,3.6+Math.sin(a1)*2.4,z])}});
+Ce.s([-.7,.02,13.5],[-.7,.02,27]);Ce.s([.7,.02,13.5],[.7,.02,27]);
+for(var r=0;r<8;r++){var z=15+r*1.45;[-1,1].forEach(function(sg){for(var c=0;c<5;c++){var x=sg*(1.5+c*1.15),hx=.28,hz=.28;
+ var ex=x/10,ez=(z-19)/8;if(ex*ex+ez*ez>1)continue;
+ Ce.s([x-hx,.9,z-hz],[x+hx,.9,z-hz]);Ce.s([x+hx,.9,z-hz],[x+hx,.9,z+hz]);Ce.s([x+hx,.9,z+hz],[x-hx,.9,z+hz]);Ce.s([x-hx,.9,z+hz],[x-hx,.9,z-hz]);
+ Ce.s([x-hx,0,z-hz],[x-hx,.9,z-hz]);Ce.s([x+hx,0,z-hz],[x+hx,.9,z-hz]);Ce.s([x-hx,0,z+hz],[x-hx,1.9,z+hz]);Ce.s([x+hx,0,z+hz],[x+hx,1.9,z+hz]);Ce.s([x-hx,1.9,z+hz],[x+hx,1.9,z+hz])}})}
+var cerim=Ce.mesh(GOLD);
+/* scenario 2: ricevimento davanti alla barchessa — tavoli tondi + luci sospese */
+var Rc=new Geo(),bulbs=[];
+[[-31,10],[-25.5,10],[-20,10],[-14.5,10],[-28.2,14.4],[-22.7,14.4],[-17.2,14.4],[-11.7,14.4]].forEach(function(t){
+ ell(Rc,t[0],t[1],1.35,1.35,.78,18);Rc.s([t[0],0,t[1]],[t[0],.78,t[1]]);
+ for(var k=0;k<8;k++){var a=k/8*Math.PI*2,x=t[0]+Math.cos(a)*2,z=t[1]+Math.sin(a)*2;Rc.s([x,0,z],[x,.95,z]);Rc.s([x,.95,z],[t[0]+Math.cos(a)*2.35,1.8,t[1]+Math.sin(a)*2.35])}});
+[-32,-24,-16,-8].forEach(function(x){Rc.s([x+1,0,18.5],[x+1,5.2,18.5]);var A=[x,5.6,5.1],B=[x+1,5.2,18.5],pr=A;
+ for(var k=1;k<=14;k++){var t=k/14,p=[A[0]+(B[0]-A[0])*t,A[1]+(B[1]-A[1])*t-Math.sin(Math.PI*t)*1.3,A[2]+(B[2]-A[2])*t];Rc.s(pr,p);pr=p;if(k<14)bulbs.push(p[0],p[1]-.12,p[2])}});
+var recep=Rc.mesh(GOLD);
+var bg=new T.BufferGeometry();bg.setAttribute('position',new T.Float32BufferAttribute(bulbs,3));
+var BU={uOp:{value:0},uPR:{value:R.getPixelRatio()},uTime:PU.uTime};
+var bulb=new T.Points(bg,new T.ShaderMaterial({uniforms:BU,transparent:true,depthWrite:false,blending:T.AdditiveBlending,
+ vertexShader:'uniform float uPR,uTime;varying float vT;void main(){vec4 mv=modelViewMatrix*vec4(position,1.);vT=.75+.25*sin(uTime*6.+position.x*3.+position.z);gl_PointSize=26.*uPR/-mv.z*7.;gl_Position=projectionMatrix*mv;}',
+ fragmentShader:'uniform float uOp;varying float vT;void main(){float d=length(gl_PointCoord-.5);float a=smoothstep(.5,0.,d);gl_FragColor=vec4(vec3(1.,.82,.5)*(a*a*1.6+smoothstep(.12,0.,d)),uOp*vT*a);}'}));S.add(bulb);
+/* griglia */
+var Gr=new Geo();for(var k=-176;k<=176;k+=8){Gr.s([k,0,-176],[k,0,176]);Gr.s([-176,0,k],[176,0,k])}var grid=Gr.mesh(WHITE);grid.u.d.value=1;grid.u.o.value=0;grid.position.y=-.03;
+/* ================= texture ================= */
+var tex=[],loaded=0,L=new T.TextureLoader();L.setCrossOrigin('anonymous');
+var maxA=R.capabilities.getMaxAnisotropy?R.capabilities.getMaxAnisotropy():1;
+FR.forEach(function(u,i){L.load(u,function(t){t.minFilter=T.LinearFilter;t.magFilter=T.LinearFilter;t.generateMipmaps=false;t.anisotropy=maxA;tex[i]=t;loaded++},undefined,function(){loaded++})});
+var pc=D.getElementById('vpc'),bi=D.getElementById('vbi'),vfr=D.getElementById('vfr'),vlab=D.getElementById('vlab'),vsc=D.getElementById('vsc'),vsct=D.getElementById('vsct');
+function lab(t){if(vlab.textContent!==t)vlab.textContent=t}
+var curS='';function scen(t){if(t===curS)return;curS=t;if(!t){vsc.classList.remove('on');return}vsc.classList.remove('on');setTimeout(function(){vsct.textContent=t;vsc.classList.add('on')},t?120:0)}
+function size(){W=box.clientWidth||innerWidth;HH=box.clientHeight||innerHeight;R.setSize(W,HH,false);C.aspect=W/HH;C.updateProjectionMatrix();PU.uAsp.value=W/HH}
+size();addEventListener('resize',size);
+function sz(t){return t&&t.image?new T.Vector2(t.image.width,t.image.height):new T.Vector2(800,550)}
+function pad(x){return(x<10?'0':'')+x}
+function E(x){return x<0?0:x>1?1:x}function ez(x){x=E(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2}
+function lerp(a,b,t){return [a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t,a[2]+(b[2]-a[2])*t]}
+/* tempi (s) */
+var T1=.8,T2=1.5,T3=2.2,HOLD=.38,TR=.27,CERX=.7;
+var t0=performance.now(),tw=0,started=false,ok=[],cerIdx=-1,sched=[];
+var pf=function(){return C.aspect<1?1+(1-C.aspect)*1.7:1};
+/* percorso camera nella parte 3D */
+var K0=function(t){var a=.7+t*.55,r=70*pf();return {p:[Math.cos(a)*r-8,36-6*t,Math.sin(a)*r+10],l:[-8,3,6]}};
+var K1={p:[17,8.5,40],l:[0,1.2,17]},K2={p:[-6,9,34],l:[-20,1.5,11]};
+function cam(t){var k,a,b;
+ if(t<T1){k=K0(t/T1)}
+ else if(t<T2){a=K0(1);var u=ez((t-T1)/(T2-T1));k={p:lerp(a.p,[K1.p[0]*pf(),K1.p[1]*pf(),K1.p[2]*pf()],u),l:lerp(a.l,K1.l,u)}}
+ else{var u2=ez((t-T2)/(T3-T2));var p1=[K1.p[0]*pf(),K1.p[1]*pf(),K1.p[2]*pf()],p2=[K2.p[0]*pf(),K2.p[1]*pf(),K2.p[2]*pf()];k={p:lerp(p1,p2,u2),l:lerp(K1.l,K2.l,u2)}}
+ C.position.set(k.p[0],k.p[1],k.p[2]);C.lookAt(k.l[0],k.l[1],k.l[2])}
+function frame(now){raf=requestAnimationFrame(frame);var t=(now-t0)/1000;PU.uTime.value=t;
+ var lp=FR.length?loaded/FR.length:1;
+ if(!started){var tt=Math.min(t,T3+.25);cam(tt);
+  villa.u.d.value=E(t/(T1*.95));grid.u.o.value=E(t/.6)*.4;
+  cerim.u.d.value=E((t-T1*.8)/(T2-T1));recep.u.d.value=E((t-T2+.1)/(T3-T2));BU.uOp.value=E((t-T2-.25)/.5);
+  villa.u.o.value=t<T1?1:.55;
+  if(t<T1)lab(CFG.scen?'Rilievo 3D':'');
+  if(t>=T1*.85&&t<T2-.05){lab('Scenario 01');scen(CFG.scen[0])}else if(t>=T2-.05){lab('Scenario 02');scen(CFG.scen[1])}
+  var shown=Math.min(lp,E(t/T3));pc.textContent=('00'+Math.round(shown*100)).slice(-3);bi.style.width=(shown*100)+'%';
+  if(t>=T3&&lp>=1){started=true;tw=t;ok=[];for(var i=0;i<FR.length;i++)if(tex[i]){if(CER&&CER.frame===i)cerIdx=ok.length;ok.push(tex[i])}
+   if(!ok.length){end(true);return}
+   var acc=0;for(var j=0;j<ok.length;j++){sched.push(acc);acc+=TR+HOLD+(j===cerIdx?CERX:0)}sched.push(acc);scen('');lab('Ripresa aerea')}
+ }
+ if(started){var s=t-tw,N=ok.length,idx=0;while(idx<N-1&&s>=sched[idx+1])idx++;
+  var ph=s-sched[idx],dur=sched[idx+1]-sched[idx];
+  PU.tA.value=idx===0?blank:ok[idx-1];PU.tB.value=ok[idx];PU.sA.value=sz(PU.tA.value);PU.sB.value=sz(ok[idx]);
+  PU.uT.value=ez(ph/TR);PU.uDir.value=idx%2;
+  PU.zA.value=1.065;PU.zB.value=1.0+.065*E(ph/(dur+TR))+(idx===N-1?.02*Math.max(0,ph-dur):0);
+  PU.cB.value=idx===cerIdx?E((ph-TR-.05)/(CERX*.9)):0;PU.cA.value=(idx-1===cerIdx)?1:0;
+  if(idx===cerIdx&&ph>TR){lab('Scenario 01');scen(CER.label||CFG.scen[0])}else if(curS&&!(idx===cerIdx)){scen('');lab('Ripresa aerea')}
+  /* il 3D si dissolve sulla prima ripresa */
+  var fo=1-E(s/.45);villa.u.o.value=.55*fo;cerim.u.o.value=fo;recep.u.o.value=fo;BU.uOp.value=fo;grid.u.o.value=.4*fo;
+  vfr.textContent=pad(idx+1)+' / '+pad(N);var tot=sched[N];pc.textContent=('00'+Math.round(E(s/tot)*100)).slice(-3);bi.style.width=(E(s/tot)*100)+'%';
+  if(idx===N-1&&ph>TR*.5)box.classList.add('t');
+  if(s>tot+.25)end(false);
+ }
+ R.clear();R.render(pS,pC);if(!started||t-tw<.5)R.render(S,C);
+}
+raf=requestAnimationFrame(frame);
+setTimeout(function(){if(!done)end(true)},16000);
+}
+function start(){if(window.THREE)go();else{var s=D.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';s.onload=go;s.onerror=function(){H.classList.remove('volo-on')};D.head.appendChild(s)}}
+/* se c'è l'intro Umbra, il volo parte quando quella finisce */
+function chk(){var up=D.getElementById('uPortal');
+if(up){var iv=setInterval(function(){if(up.classList.contains('u-out')||up.style.display==='none'||!up.isConnected){clearInterval(iv);start()}},120)}else start()}
+if(D.readyState==='loading')D.addEventListener('DOMContentLoaded',chk);else chk();
+})();
+</script>
+</body>
+</html>
